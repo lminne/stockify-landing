@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'StockifyMain';
+    src: local('StockifyMain'), url(../../assets/fonts/futurept-demi.otf) format('opentype');
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+.StockifyLogo {
+    height: 65px;
+    width: 65px;
+}
+
+
+
+.navbar-container {
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-menu {
+    width:100%;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+}
+
+.nav-main {
+    width: 50%;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-active {
+    color: #3F414E !important;
+}
+
+.nav-link-item {
+    color: #898989;
+    text-decoration: none;
+    font-family: StockifyMain, sans-serif;
+    font-size: 18px;
+
+}
+
+.get-started {
+    background-color: #34CD9E;
+    border-radius: 50px;
+    border: none;
+    color:#F9F9F9;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: StockifyMain, sans-serif;
+    outline: none;
+}

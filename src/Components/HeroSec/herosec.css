@@ -1,0 +1,11 @@
+.section {
+    width:auto;
+    padding-right: 12rem;
+    padding-left: 12rem;
+    background-color: green;
+
+}
+
+.container {
+    background-color: orange;
+}
