@@ -1,0 +1,11 @@
+.get-started {
+    background-color: #34CD9E;
+    border-radius: 50px;
+    border: none;
+    color:#F9F9F9;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: StockifyMain, sans-serif;
+    outline: none;
+}

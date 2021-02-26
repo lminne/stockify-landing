@@ -1,11 +1,44 @@
+@font-face {
+    font-family: 'StockifySecondary';
+    src: local('StockifySecondary'), url(../../assets/fonts/Montserrat-Light.ttf) format('truetype');
+}
+
 .section {
     width:auto;
     padding-right: 12rem;
     padding-left: 12rem;
-    background-color: green;
 
 }
 
 .container {
-    background-color: orange;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.h1-primary {
+    color: #282c34;
+    font-family: StockifyMain, sans-serif;
+}
+
+.h3-secondary {
+    font-family: StockifySecondary, sans-serif;
+    color: #282c34;
 }
