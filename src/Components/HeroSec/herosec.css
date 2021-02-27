@@ -8,37 +8,76 @@
     padding-right: 12rem;
     padding-left: 12rem;
 
+
 }
 
 .container {
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .hero-item {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .hero-text {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .hero-img {
     max-width: 100%;
+    min-width: 400px;
 }
 
 .h1-primary {
+    font-size: 5rem;
     color: #282c34;
     font-family: StockifyMain, sans-serif;
 }
 
 .h3-secondary {
+    font-size: 1.5rem;
     font-family: StockifySecondary, sans-serif;
     color: #282c34;
+}
+
+.button-group {
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    }
+    .hero-img {
+        max-width: 100%;
+        min-width: 300px;
+    }
+    .h1-primary {
+        font-size: 3rem;
+
+    }
+
+    .h3-secondary {
+        font-size: 0.75rem;
+    }
 }
