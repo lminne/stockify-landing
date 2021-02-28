@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Future PT Medium';
+    src: local('Future PT Medium'), url(../../assets/fonts/futurept-medium.otf) format('opentype');
+}
+
+
+.testimonialText {
+    font-family: "Future PT Medium", sans-serif;
+    color: #898989;
+    font-size: 20px;
+}
+
+.innerTestimonialCard {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.testimonialCard {
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonialImg {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+.TestimonialFooter {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.innerTestimonialFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TestimonialImgCard {
+    padding-right: 1.5rem;
+}
+.TestimonialUserName {
+    font-family: StockifyMain, sans-serif;
+    font-weight: normal;
+    color: #282c34;
+    font-size: 25px;
+}
+
+.TestimonialUserProfession {
+    color: #898989;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+}

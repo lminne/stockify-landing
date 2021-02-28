@@ -1,0 +1,12 @@
+.testimonial-container {
+    display: grid;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+@media only screen and (max-width: 1000px) {
+    .testimonial-container {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}

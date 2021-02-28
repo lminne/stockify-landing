@@ -1,0 +1,39 @@
+.get-started-item {
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-started-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+}
+
+.step-heading {
+    text-align: center;
+    font-family: StockifyMain, sans-serif;
+    color: #3F414E;
+    font-size: 25px;
+    padding-bottom: 0.75rem;
+
+}
+
+.step-subheading {
+    color: #898989;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+
+}

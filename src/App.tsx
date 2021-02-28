@@ -6,6 +6,8 @@ import HeroSec from "./Components/HeroSec/herosec";
 import Header from "./Components/Header/Header";
 import {IGeneral} from "./stores/generals";
 import {inject, observer} from "mobx-react";
+import TestimonialSection from "./Sections/Testimonials/testimonials";
+import GetStarted from "./Sections/getstarted/getstarted";
 
 interface AppState {
 
@@ -21,8 +23,10 @@ class App extends Component<AppProps, AppState> {
     render() {
         return(
 
-            <div>
+            <div id={"app"}>
                 <HeroSec/>
+                <TestimonialSection/>
+                <GetStarted/>
             </div>
         )
     }
