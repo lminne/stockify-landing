@@ -18,12 +18,18 @@ class HeroSec extends Component<AppProps, AppState> {
                 <div className={"container"}>
 
                     <div className={"hero-text"}>
-                        <div>
+                        <div className={"heading-holder"}>
                             <h1 className={"h1-primary"}>Understand your Portfolio</h1>
                             <h3 className={"h3-secondary"}>Why ETF Portfolios are not necessarily diversified</h3>
-                            <div className={"button-group"}>
-                                <Button text={"Download now"}/>
-                                <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+                            <div className={"button-group-desktop"}>
+                                <div className={"btn-holder-desktop"}>
+                                    <Button text={"Download now"}/>
+
+                                </div>
+                                <div className={"btn-holder-desktop"}>
+                                    <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+
+                                </div>
                             </div>
 
                         </div>
@@ -32,6 +38,21 @@ class HeroSec extends Component<AppProps, AppState> {
                         <img src={HeroImg} className={"hero-img"}/>
 
                     </div>
+                    <div className={"cta-container"}>
+                        <div className={"button-group-mobile"}>
+                            <div className={"btn-holder-mobile"}>
+                                <Button text={"Download now"}/>
+
+                            </div>
+                            <div className={"btn-holder-mobile"}>
+                                <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
             </div>
