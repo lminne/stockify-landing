@@ -30,18 +30,21 @@ class App extends Component<AppProps, AppState> {
                 <HeroSec/>
                 <TestimonialSection/>
                 <GetStarted/>
-                <h1 style={{textAlign:"center"}} className={"h1-primary"}>The Features</h1>
-                <h3 style={{textAlign:"center"}} className={"h3-secondary"}>The <b>All-in-One Tool</b> to manage your Portfolio</h3>
-                <Features fheading_1={"Portfolio Performance"} fheading_2={"Diversification"}
-                          fheading_3={"Portfolio Measures"}
-                          fsubheading_1={"Track the performance of all your holdings in one place"}
-                          fsubheading_2={"How well is your portfolio diversified among different dimensions"}
-                          fsubheading_3={"Access overall portfolio correlation and variance"} first_img={true} picture_first={true}/>
-                <Features fheading_1={"Quantitative Analysis"} fheading_2={"Portfolio creation"}
-                          fheading_3={"Buy and Sell"}
-                          fsubheading_1={"Get relevant quantitative measurements for your portfolio"}
-                          fsubheading_2={"Build fantasy portfolio and compare their performance"}
-                          fsubheading_3={"Sell positions and keep track of your realized gains"} first_img={false} picture_first={false}/>
+                <div id={"features-section"}>
+                    <h1 style={{textAlign:"center"}} className={"h1-primary"}>The Features</h1>
+                    <h3 style={{textAlign:"center"}} className={"h3-secondary"}>The <span style={{fontWeight:1000}}>All-in-One Tool</span> to manage your Portfolio</h3>
+                    <Features fheading_1={"Portfolio Performance"} fheading_2={"Diversification"}
+                              fheading_3={"Portfolio Measures"}
+                              fsubheading_1={"Track the performance of all your holdings in one place"}
+                              fsubheading_2={"How well is your portfolio diversified among different dimensions"}
+                              fsubheading_3={"Access overall portfolio correlation and variance"} first_img={true} picture_first={true}/>
+                    <Features fheading_1={"Quantitative Analysis"} fheading_2={"Portfolio creation"}
+                              fheading_3={"Buy and Sell"}
+                              fsubheading_1={"Get relevant quantitative measurements for your portfolio"}
+                              fsubheading_2={"Build fantasy portfolio and compare their performance"}
+                              fsubheading_3={"Sell positions and keep track of your realized gains"} first_img={false} picture_first={false}/>
+                </div>
+
             <Footer/>
             </div>
         )

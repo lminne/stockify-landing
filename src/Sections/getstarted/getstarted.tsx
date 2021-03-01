@@ -15,7 +15,7 @@ interface AppProps {
 class GetStarted extends Component<AppProps, AppState> {
     render() {
         return (
-            <div className={"section"}>
+            <div id={"get-started-section"} className={"section"}>
                 <div style={{width:"100%"}}>
                     <h1 style={{textAlign:"center"}} className={"h1-primary"}>Get started</h1>
                     <h3 style={{textAlign:"center"}} className={"h3-secondary"}>Setting up Stockify</h3>

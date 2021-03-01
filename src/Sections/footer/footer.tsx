@@ -28,7 +28,7 @@ class Footer extends Component<AppProps, AppState> {
 
     render() {
         return (
-            <div className={"section footer-sec"}>
+            <div id={"footer-section"} className={"section footer-sec"}>
                 <div className={"footer"}>
                     <div className={"footer-item first-footer-item"}>
                         <div>
@@ -49,11 +49,16 @@ class Footer extends Component<AppProps, AppState> {
                     </div>
                     <div className={"footer-item"}>
                         <div className={"footer-page-overview"}>
-                            <div className={"page-overview-item"}>Home</div>
-                            <div className={"page-overview-item"}>Testimonials</div>
-                            <div className={"page-overview-item"}>Get started</div>
-                            <div className={"page-overview-item"}>Features</div>
-                            <div className={"page-overview-item"}>Contact</div>
+                            <div className={"page-overview-item"}>
+                                <a className={"footer-ref-link"} href="">Home</a></div>
+                            <div className={"page-overview-item"}>
+                                <a className={"footer-ref-link"} href="">Testimonials</a></div>
+                            <div className={"page-overview-item"}>
+                                <a className={"footer-ref-link"} href="">Get started</a></div>
+                            <div className={"page-overview-item"}>
+                                <a className={"footer-ref-link"} href="">Features</a></div>
+                            <div className={"page-overview-item"}>
+                                <a className={"footer-ref-link"} href="">Contact</a></div>
 
                         </div>
                     </div>

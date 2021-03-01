@@ -17,7 +17,7 @@ interface AppProps {
 class HeroSec extends Component<AppProps, AppState> {
     render() {
         return (
-            <div>
+            <div id={"hero-section"}>
                 <div className={"section"}>
                     <div className={"container"}>
 
