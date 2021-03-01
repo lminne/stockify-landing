@@ -54,14 +54,14 @@
     }
 
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 330px) {
 
     .featureHeading {
-        font-size: 30px;
+        font-size: 23px;
         text-align: center;
     }
     .featureSubheading {
-        font-size: 18px;
+        font-size: 15px;
         text-align: center;
     }
 
