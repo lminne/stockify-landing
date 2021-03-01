@@ -170,7 +170,7 @@
     .container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
     .hero-img {
         max-width: 100%;
@@ -198,4 +198,13 @@
     .heading-holder {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 350px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+
 }
