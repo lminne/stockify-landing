@@ -7,7 +7,7 @@
 }
 .perfHero {
     max-height: 700px;
-    width: auto;
+    max-width: 100% !important;
 }
 
 .perf-hero-col {
