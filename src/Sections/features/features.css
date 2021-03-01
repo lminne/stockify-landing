@@ -1,5 +1,5 @@
 .featureContainer {
-
+    width: 100%;
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: grid;
@@ -10,6 +10,7 @@
 }
 
 .perf-hero-col {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +23,7 @@
 }
 
 .featured-descriptions {
+    width: 100%;
     padding-bottom: 4rem;
     padding-top:4rem;
     padding-right: 3rem;
@@ -38,13 +40,17 @@
 @media only screen and (max-width: 992px) {
 
     .featureContainer {
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .featured-descriptions {
+        width: 100%;
         padding-top: 4rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-right: 0;
+        padding-left: 0;
     }
 
 }

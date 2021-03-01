@@ -1,0 +1,103 @@
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 4rem;
+    padding-top:4rem;
+}
+
+.footer-sec {
+
+    background-color: #34CD9E;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button {
+    width: 200px;
+    height: 45px;
+    background-color: #F9F9F9;
+    border-radius: 50px;
+    color: #34CD9E;
+    font-family: StockifyMain, sans-serif;
+    border: 2px solid #34CD9E;
+}
+.company-name {
+    font-family: StockifyMain, sans-serif;
+    font-size: 42px;
+    color: #F9F9F9;
+    padding-bottom: 2rem;
+}
+
+.page-overview-item {
+    color: #F9F9F9;
+    font-family: StockifyMain, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.footer-page-overview {
+    border-left: 5px solid #F9F9F9;
+    padding-left: 2rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.contact-and-social {
+    border-left: 5px solid #F9F9F9;
+    padding-left: 2rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.social-icon-holder {
+    color: #F9F9F9;
+    font-family: StockifyMain, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer-sec {
+        border-top-right-radius: 75px;
+        border-top-left-radius: 75px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .company-name {
+        text-align: center;
+    }
+
+    .footer-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer {
+        grid-template-columns: repeat(2,1fr);
+        width: 70%;
+    }
+.first-footer-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 5rem;
+}
+
+}

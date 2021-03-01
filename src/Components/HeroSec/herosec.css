@@ -10,6 +10,7 @@
 }
 
 
+
 body {
     width: 100%;
 }
@@ -24,7 +25,7 @@ body {
 
 .section {
     width:100%;
-    max-width: 1500px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +103,7 @@ body {
         align-items: center;
         padding-right: 3rem;
         padding-left: 3rem;
-        max-width: 992px;
+        max-width: 900px;
     }
 
     .container {
@@ -125,8 +126,16 @@ body {
 
 }
 
-
 @media only screen and (max-width: 650px) {
+    .container {
+        padding-top:0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .section {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
     .cta-container {
         width: auto;
         display: flex;

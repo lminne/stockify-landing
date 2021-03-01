@@ -10,6 +10,7 @@ import TestimonialSection from "./Sections/Testimonials/testimonials";
 import GetStarted from "./Sections/getstarted/getstarted";
 import Features from "./Sections/features/features";
 import Featureitem from "./Components/featureitem/featureitem";
+import Footer from "./Sections/footer/footer";
 
 interface AppState {
 
@@ -26,9 +27,12 @@ class App extends Component<AppProps, AppState> {
         return (
 
             <div id={"app"}>
+                <Header/>
                 <HeroSec/>
                 <TestimonialSection/>
                 <GetStarted/>
+                <h1 style={{textAlign:"center"}} className={"h1-primary"}>The Features</h1>
+                <h3 style={{textAlign:"center"}} className={"h3-secondary"}>The <b>All-in-One Tool</b> to manage your Portfolio</h3>
                 <Features fheading_1={"Portfolio Performance"} fheading_2={"Diversification"}
                           fheading_3={"Portfolio Measures"}
                           fsubheading_1={"Track the performance of all your holdings in one place"}
@@ -39,7 +43,7 @@ class App extends Component<AppProps, AppState> {
                           fsubheading_1={"Get relevant quantitative measurements for your portfolio"}
                           fsubheading_2={"Build fantasy portfolio and compare their performance"}
                           fsubheading_3={"Sell positions and keep track of your realized gains"} first_img={false} picture_first={false}/>
-
+            <Footer/>
             </div>
         )
     }

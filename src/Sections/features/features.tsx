@@ -20,15 +20,42 @@ interface AppProps {
 
 }
 
-class Features extends Component<AppProps, AppState> {
 
+
+class Features extends Component<AppProps, AppState> {
+    constructor(props:AppProps) {
+        super(props);
+        this.state = {
+            windowWidth: window.innerWidth
+        };
+    };
+
+    handleResize = () => {
+        this.setState({ windowWidth: window.innerWidth });
+    };
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize);
+    }
+
+    componentWillUnmount() {
+        window.addEventListener("resize", this.handleResize);
+    }
 
     render() {
+        let pic_first = this.props.picture_first;
+        // @ts-ignore
+        const {windowWidth} = this.state
+
+        if (windowWidth <= 1200) {
+
+            pic_first = true
+        }
         return (
             <div className={"section"}>
 
                 <div className={"featureContainer"}>
-                    {this.props.picture_first?<div className={"perf-hero-col"}>
+                    {pic_first?<div style={{width:"100%"}} className={"perf-hero-col"}>
                         {this.props.first_img? <img className={"perfHero"} src={PerfHero} alt="PerfHero"/> :<img className={"perfHero"} src={CountryHero} alt="CountryHero"/>}
                     </div>: <div className={"perf-hero-col-last"}>
                         {this.props.first_img? <img className={"perfHero"} src={PerfHero} alt="PerfHero"/> :<img className={"perfHero"} src={CountryHero} alt="CountryHero"/>}

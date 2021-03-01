@@ -60,10 +60,13 @@ class HeroSec extends Component<AppProps, AppState> {
                     </div>
 
                 </div>
-                <div className={"normal_div"} style={{paddingTop: "2rem"}}>
+                <div style={{paddingTop:"1rem", paddingBottom:"1rem"}} className={"section"}>
+                    <div className={"normal_div"} style={{paddingTop: "2rem"}}>
 
-                    <a href=""><ArrowDown/></a>
+                        <a href=""><ArrowDown/></a>
+                    </div>
                 </div>
+
             </div>
 
 

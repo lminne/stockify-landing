@@ -63,6 +63,7 @@ class Header extends Component<AppProps, AppState> {
     scrollHandler = () => {
         const header = document.getElementById("header");
         if (header) {
+            console.log(header.offsetTop)
             const sticky = header.offsetTop;
             if (window.pageYOffset > sticky) {
                 this.props.general?.setSticky(true);
@@ -84,20 +85,20 @@ class Header extends Component<AppProps, AppState> {
             fontWeight: 400,
         };
         // @ts-ignore
-        if (this.props.general?.getWidth <= 1200) { // Mobile Version
+        if (this.props.general?.getWidth <= 800) { // Mobile Version
             return (
                 <div className={classname} id="header">
                     <div id="header_left_content">
 
                         <div id="header_title" onClick={() => {
                             window.location.href = "/"
-                        }}>Pigeon
+                        }}>Stockify Mobile {this.props.general?.getWidth}
                         </div>
                     </div>
                     <div className="header_right_content">
                         <div id="header_right_content_link" onClick={() => {
                             window.location.href = "/services"
-                        }}>Services
+                        }}>Download now
                         </div>
                         <div id="header_right_menu" onClick={() => {
                             this.onclick()
@@ -108,20 +109,12 @@ class Header extends Component<AppProps, AppState> {
                         </div>
                     </div>
                     <div className="header_menu">
-                        <Heading text={"Instagram"} style={{marginTop: "100px"}}/>
-                        <Heading text={"Youtube"} style={{marginTop: "0px"}}/>
-                        <Heading text={"TikTok"} style={{marginTop: "0px"}}/>
-                        <div style={{
-                            width: "80%",
-                            display: "flex",
-                            flexDirection: "row",
-                            alignItems: "center",
-                            justifyContent: "center"
-                        }}>
-                            <Heading text={"Pigeon"} style={{padding: 0, margin: 0}}/>
-                            <div style={{width: "2px", height: "40px", backgroundColor: "#454065"}}/>
-                            <Heading text={"Kontakt"} style={{padding: 0, margin: 0}}/>
-                        </div>
+                        <Heading text={"Testimonials"} style={{marginTop: "100px"}}/>
+                        <Heading text={"Get started"} style={{marginTop: "0px"}}/>
+                        <Heading text={"Features"} style={{marginTop: "0px"}}/>
+                        <Heading text={"About us"} style={{marginTop: 0}}/>
+                        <Heading text={"Contact"} style={{marginTop: 0}}/>
+
                     </div>
                 </div>
             );
@@ -133,13 +126,13 @@ class Header extends Component<AppProps, AppState> {
 
                         <div id="header_title" onClick={() => {
                             window.location.href = "/"
-                        }}>Pigeon
+                        }}>Stockify Desktop
                         </div>
                     </div>
                     <div className={"header_right_content"} style={{paddingRight: 0}}>
                         <div id="header_right_content_link" onClick={() => {
                             window.location.href = "/services"
-                        }}>Services
+                        }}>Download now
                         </div>
                         <div style={{width: "30px"}}/>
                         <div id="header_right_content_link" onClick={() => {
