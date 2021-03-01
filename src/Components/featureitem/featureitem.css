@@ -30,6 +30,18 @@
     }
 
 }
+@media only screen and (max-width: 768px) {
+
+    .featureHeading {
+        font-size: 35px;
+        text-align: center;
+    }
+    .featureSubheading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+}
 @media only screen and (max-width: 400px) {
 
     .featureHeading {

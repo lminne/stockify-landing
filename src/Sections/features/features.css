@@ -7,10 +7,12 @@
 }
 .perfHero {
     max-height: 700px;
+    width: auto;
 }
 
 .perf-hero-col {
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +40,7 @@
 }
 
 @media only screen and (max-width: 992px) {
+
 
     .featureContainer {
         width: 100%;
