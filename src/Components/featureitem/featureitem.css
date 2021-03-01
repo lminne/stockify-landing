@@ -1,0 +1,43 @@
+.featureItem {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.featureHeading {
+    font-family: StockifyMain, sans-serif;
+    color: #3F414E;
+    font-size: 45px;
+    padding-bottom: 0.75rem;
+}
+
+.featureSubheading {
+    color: #898989;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .featureHeading {
+        font-size: 50px;
+        text-align: center;
+    }
+    .featureSubheading {
+        font-size: 25px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+
+    .featureHeading {
+        font-size: 30px;
+        text-align: center;
+    }
+    .featureSubheading {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
