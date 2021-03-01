@@ -27,7 +27,6 @@ class App extends Component<AppProps, AppState> {
         return (
 
             <div id={"app"}>
-                <Header/>
                 <HeroSec/>
                 <TestimonialSection/>
                 <GetStarted/>
