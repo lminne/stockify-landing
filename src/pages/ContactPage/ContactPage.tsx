@@ -38,7 +38,6 @@ class ContactPage extends Component<AppProps, AppState> {
         return (
             <div id={"app"}>
                 <Contact/>
-
                 <Footer/>
             </div>
         )

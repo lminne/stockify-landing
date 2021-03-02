@@ -10,6 +10,7 @@ interface AppProps {
     headingText: string,
     subheadingText: string,
     IconComp: any,
+    mail: boolean,
 
 }
 
@@ -24,15 +25,17 @@ class ContactItem extends Component<AppProps, AppState> {
                     <div className={"step-heading"}>
                         {this.props.headingText}
                     </div>
-                    <div className={"step-subheading"}>
+                    {this.props.mail?<div className={"step-subheading"}>
+                        <a className={"link-text"} href={"mailto:"+this.props.subheadingText}>{this.props.subheadingText}</a>
+                    </div>: <div className={"step-subheading"}>
                         {this.props.subheadingText}
-                    </div>
+                    </div>}
                 </div>
             </div>
         );
     }
 
-}
+};
 
 
 

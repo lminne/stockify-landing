@@ -24,9 +24,9 @@ class Contact extends Component<AppProps, AppState> {
                     <h1 style={{textAlign:"center"}} className={"h1-primary"}>Contact us</h1>
                     <h3 style={{textAlign:"center"}} className={"h3-secondary"}>Get in touch</h3>
                     <div className={"get-started-container"}>
-                        <ContactItem IconComp={<Mail/>} subheadingText={"info@stockify.de"} headingText={"Mail"}/>
-                        <ContactItem IconComp={<Call/>} subheadingText={"+49 123 456 789"} headingText={"Phone"}/>
-                        <ContactItem IconComp={<Home/>} subheadingText={"Vallendar, Germany"} headingText={"Adress"}/>
+                        <ContactItem mail={true} IconComp={<Mail/>} subheadingText={"info@stockify.de"} headingText={"Mail"}/>
+                        <ContactItem mail={false} IconComp={<Call/>} subheadingText={"+49 123 456 789"} headingText={"Phone"}/>
+                        <ContactItem mail={false} IconComp={<Home/>} subheadingText={"Vallendar, Germany"} headingText={"Adress"}/>
                     </div>
                 </div>
 
