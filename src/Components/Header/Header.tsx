@@ -85,7 +85,7 @@ class Header extends Component<AppProps, AppState> {
             fontWeight: 400,
         };
         // @ts-ignore
-        if (this.props.general?.getWidth <= 1200) { // Mobile Version
+        if (this.props.general?.getWidth <= 800) { // Mobile Version
             return (
                 <div className={classname} id="header">
                     <div id="header_left_content">
