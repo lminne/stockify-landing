@@ -11,7 +11,8 @@ interface AppState {
 
 interface AppProps {
     SecHeading: string,
-    SecText: string,
+    SecText?: string,
+    innerItem?: any,
 }
 
 class TextSection extends Component<AppProps, AppState> {
@@ -23,6 +24,8 @@ class TextSection extends Component<AppProps, AppState> {
                 <div className={"TextInSec"}>
                     {this.props.SecText}
                 </div>
+                <div>{this.props.innerItem}</div>
+
             </div>
 
 
