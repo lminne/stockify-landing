@@ -38,8 +38,6 @@ class Impressum extends Component<AppProps, AppState> {
 
         return (
             <div id={"app"}>
-
-                <Contact/>
                 <Legal/>
                 <Footer/>
             </div>

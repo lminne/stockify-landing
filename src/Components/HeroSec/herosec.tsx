@@ -3,6 +3,8 @@ import './herosec.css'
 import HeroImg from "../../assets/img/Hero-Mockup.png";
 import Button from "../Button/button";
 import {ReactComponent as ArrowDown} from "../../assets/img/Down-Arrow.svg";
+import PrimaryHeading from "../PrimaryHeading/PrimaryHeading";
+import SecondaryHeading from "../SecondaryHeading/SecondaryHeading";
 
 interface AppState {
 
@@ -23,8 +25,8 @@ class HeroSec extends Component<AppProps, AppState> {
 
                         <div className={"hero-text"}>
                             <div className={"heading-holder"}>
-                                <h1 className={"h1-primary"}>Understand your Portfolio</h1>
-                                <h3 className={"h3-secondary"}>Why ETF Portfolios are not necessarily diversified</h3>
+                                <PrimaryHeading text={"Understand your Portfolio"}/>
+                                <SecondaryHeading text={"Why ETF Portfolios are not necessarily diversified"}/>
                                 <div className={"button-group-desktop"}>
                                     <div className={"btn-holder-desktop"}>
                                         <Button text={"Download now"}/>

@@ -1,0 +1,12 @@
+.TextInSec {
+    font-family: StockifySecondary, sans-serif;
+    color: #898989;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.textSection {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}

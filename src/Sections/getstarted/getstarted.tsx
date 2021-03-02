@@ -5,6 +5,8 @@ import GetStartedItem from "../../Components/getstarteditem/getstarteditem";
 import {ReactComponent as DownloadIcon} from "../../assets/img/download-icon.svg";
 import {ReactComponent as AddPortfolioIcon} from "../../assets/img/add-icon.svg";
 import {ReactComponent as EnjoyIcon} from "../../assets/img/enjoy-icon.svg";
+import PrimaryHeading from "../../Components/PrimaryHeading/PrimaryHeading";
+import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading";
 
 
 
@@ -22,8 +24,8 @@ class GetStarted extends Component<AppProps, AppState> {
         return (
             <div id={"get-started-section"} className={"section"}>
                 <div style={{width:"100%"}}>
-                    <h1 style={{textAlign:"center"}} className={"h1-primary"}>Get started</h1>
-                    <h3 style={{textAlign:"center"}} className={"h3-secondary"}>Setting up Stockify</h3>
+                    <PrimaryHeading style={{textAlign:"center"}} text={"Get started"}/>
+                    <SecondaryHeading style={{textAlign:"center"}} text={"Setting up Stockify"}/>
 
                 <div className={"get-started-container"}>
                     <GetStartedItem headingText={"Download"} subheadingText={"Get Stockify App from your App Store"} IconComp={<DownloadIcon/>}/>

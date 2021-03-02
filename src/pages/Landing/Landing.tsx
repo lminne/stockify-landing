@@ -7,6 +7,8 @@ import TestimonialSection from "../../Sections/Testimonials/testimonials";
 import GetStarted from "../../Sections/getstarted/getstarted";
 import Features from "../../Sections/features/features";
 import Footer from "../../Sections/footer/footer";
+import PrimaryHeading from "../../Components/PrimaryHeading/PrimaryHeading";
+import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading";
 
 
 interface AppState {
@@ -47,8 +49,8 @@ class Landing extends Component<AppProps, AppState> {
                 <TestimonialSection/>
                 <GetStarted/>
                 <div id={"features-section"}>
-                    <h1 style={{textAlign:"center"}} className={"h1-primary"}>The Features</h1>
-                    <h3 style={{textAlign:"center"}} className={"h3-secondary"}>The <span style={{fontWeight:1000}}>All-in-One Tool</span> to manage your Portfolio</h3>
+                    <PrimaryHeading style={{textAlign:"center"}} text={"The Features"}/>
+                    <SecondaryHeading style={{textAlign:"center"}} text={"The All-in-One Tool to manage your Portfolio</SecondaryHeading"}/>
                     <Features fheading_1={"Portfolio Performance"} fheading_2={"Diversification"}
                               fheading_3={"Portfolio Measures"}
                               fsubheading_1={"Track the performance of all your holdings in one place"}

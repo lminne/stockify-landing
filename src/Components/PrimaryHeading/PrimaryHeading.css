@@ -1,0 +1,24 @@
+.h1-primary {
+    color: #282c34;
+    font-size: 80px;
+    font-family: StockifyMain, sans-serif;
+    margin-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .h1-primary {
+        font-size: 48px;
+
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .h1-primary {
+        max-width: 100%;
+        text-align: center;
+        font-size: 45px;
+
+    }
+}

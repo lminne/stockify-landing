@@ -4,6 +4,8 @@ import ContactItem from "../../Components/ContactItem/ContactItem";
 import {ReactComponent as Mail} from "../../assets/img/mail.svg";
 import {ReactComponent as Call} from "../../assets/img/call.svg";
 import {ReactComponent as Home} from "../../assets/img/adress.svg";
+import PrimaryHeading from "../../Components/PrimaryHeading/PrimaryHeading";
+import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading";
 
 
 
@@ -21,8 +23,8 @@ class Contact extends Component<AppProps, AppState> {
         return (
             <div className={"section"}>
                 <div style={{width:"100%"}}>
-                    <h1 style={{textAlign:"center"}} className={"h1-primary"}>Contact us</h1>
-                    <h3 style={{textAlign:"center"}} className={"h3-secondary"}>Get in touch</h3>
+                    <PrimaryHeading style={{textAlign:"center"}} text={"Contact us"}/>
+                    <SecondaryHeading style={{textAlign:"center"}} text={"Get in touch"}/>
                     <div className={"get-started-container"}>
                         <ContactItem mail={true} IconComp={<Mail/>} subheadingText={"info@stockify.de"} headingText={"Mail"}/>
                         <ContactItem mail={false} IconComp={<Call/>} subheadingText={"+49 123 456 789"} headingText={"Phone"}/>
