@@ -67,13 +67,13 @@ class Footer extends Component<AppProps, AppState> {
                                 <a href="https://www.instagram.com/stockify.app/"><InstaIcon className={"social-icon"}/></a>
                             </div>
                             <div className={"social-icon-holder"}>
-                                <a href=""><LinkedInIcon className={"social-icon"}/></a>
+                                <a href="https://www.linkedin.com/in/lukas-minnebeck/"><LinkedInIcon className={"social-icon"}/></a>
                             </div>
                             <div className={"social-icon-holder"}>
                                 <a href=""><RedditIcon className={"social-icon"}/></a>
                             </div>
                             <div className={"social-icon-holder"}>
-                                <a href=""><GithubIcon className={"social-icon"}/></a>
+                                <a href="https://github.com/manminne/"><GithubIcon className={"social-icon"}/></a>
                             </div>
                         </div>
                     </div>
