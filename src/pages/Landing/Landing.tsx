@@ -9,6 +9,7 @@ import Features from "../../Sections/features/features";
 import Footer from "../../Sections/footer/footer";
 import PrimaryHeading from "../../Components/PrimaryHeading/PrimaryHeading";
 import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading";
+import FAQ from "../../Sections/FAQ/FAQ";
 
 
 interface AppState {
@@ -38,10 +39,7 @@ class Landing extends Component<AppProps, AppState> {
     }
 
     render() {
-
-
         return (
-
 
             <div id={"app"}>
 
@@ -62,7 +60,7 @@ class Landing extends Component<AppProps, AppState> {
                               fsubheading_2={"Build fantasy portfolio and compare their performance"}
                               fsubheading_3={"Sell positions and keep track of your realized gains"} first_img={false} picture_first={false}/>
                 </div>
-
+                <FAQ/>
                 <Footer/>
             </div>
         )
