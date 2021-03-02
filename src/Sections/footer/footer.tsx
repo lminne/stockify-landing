@@ -28,20 +28,20 @@ class Footer extends Component<AppProps, AppState> {
 
     render() {
         return (
-            <div id={"footer-section"} className={"section footer-sec"}>
+            <div  id={"footer-section"} className={"section footer-sec"}>
                 <div className={"footer"}>
                     <div className={"footer-item first-footer-item"}>
                         <div>
                             <div className={"company-name"}>Stockify</div>
                             <div>
-                                <button className={"contact-button"}>
-                                    Contact us
-                                </button>
+                                <div className={"contact-button"}>
+                                    <a className={"link-text"} href="contact">Contact us</a>
+                                </div>
                             </div>
                             <div>
-                                <button className={"contact-button"}>
-                                    The boring stuff
-                                </button>
+                                <div className={"contact-button"}>
+                                    <a className={"link-text"} href="impressum">The boring stuff</a>
+                                </div>
                             </div>
 
                         </div>
@@ -57,15 +57,14 @@ class Footer extends Component<AppProps, AppState> {
                                 <a className={"footer-ref-link"} href="#get-started-section">Get started</a></div>
                             <div className={"page-overview-item"}>
                                 <a className={"footer-ref-link"} href="#features-section">Features</a></div>
-                            <div className={"page-overview-item"}>
-                                <a className={"footer-ref-link"} href="#footer-section">Contact</a></div>
+
 
                         </div>
                     </div>
                     <div className={"footer-item"}>
                         <div className={"contact-and-social"}>
                             <div className={"social-icon-holder"}>
-                                <a href=""><InstaIcon className={"social-icon"}/></a>
+                                <a href="https://www.instagram.com/stockify.app/"><InstaIcon className={"social-icon"}/></a>
                             </div>
                             <div className={"social-icon-holder"}>
                                 <a href=""><LinkedInIcon className={"social-icon"}/></a>

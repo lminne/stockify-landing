@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import "./testimonial.css"
-import TestimonialImg from "../../assets/img/img.png";
 
 
 interface AppState {
@@ -11,7 +10,7 @@ interface AppProps {
     testimonialText: string,
     testimonialUserName: string,
     testimonialUserProfession: string,
-    testimonialUserImg?: any,
+    testimonialUserImg: any,
 }
 
 class TestimonialCard extends Component<AppProps, AppState> {
@@ -27,7 +26,7 @@ class TestimonialCard extends Component<AppProps, AppState> {
                     <div className={"TestimonialFooter"}>
                         <div className={"innerTestimonialFooter"}>
                             <div className={"TestimonialImgCard"}>
-                                <img className={"testimonialImg"} src={TestimonialImg} alt=""/>
+                                <img className={"testimonialImg"} src={this.props.testimonialUserImg} alt="Testimonial Image"/>
                             </div>
                             <div className={"TestimonialInfoBox"}>
                                 <div className={"TestimonialUserName"}>

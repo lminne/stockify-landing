@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./getstarteditem.css"
+import "./ContactItem.css"
 
 
 interface AppState {
@@ -13,7 +13,7 @@ interface AppProps {
 
 }
 
-class GetStartedItem extends Component<AppProps, AppState> {
+class ContactItem extends Component<AppProps, AppState> {
     render() {
         return (
             <div className={"get-started-item"}>
@@ -36,5 +36,5 @@ class GetStartedItem extends Component<AppProps, AppState> {
 
 
 
-export default GetStartedItem;
+export default ContactItem;
 

@@ -26,7 +26,16 @@
     font-family: StockifyMain, sans-serif;
     border: 2px solid #34CD9E;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.link-text {
+    color: #34CD9E;
+    text-decoration: none;
+}
+
 .company-name {
     font-family: StockifyMain, sans-serif;
     font-size: 42px;
