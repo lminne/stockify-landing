@@ -50,13 +50,13 @@ class Footer extends Component<AppProps, AppState> {
                     <div className={"footer-item"}>
                         <div className={"footer-page-overview"}>
                             <div className={"page-overview-item"}>
-                                <a className={"footer-ref-link"} href="#hero-section">Home</a></div>
+                                <a className={"footer-ref-link"} href="/#hero-section">Home</a></div>
                             <div className={"page-overview-item"}>
-                                <a className={"footer-ref-link"} href="#testimonial-section">Testimonials</a></div>
+                                <a className={"footer-ref-link"} href="/#testimonial-section">Testimonials</a></div>
                             <div className={"page-overview-item"}>
-                                <a className={"footer-ref-link"} href="#get-started-section">Get started</a></div>
+                                <a className={"footer-ref-link"} href="/#get-started-section">Get started</a></div>
                             <div className={"page-overview-item"}>
-                                <a className={"footer-ref-link"} href="#features-section">Features</a></div>
+                                <a className={"footer-ref-link"} href="#/features-section">Features</a></div>
 
 
                         </div>
