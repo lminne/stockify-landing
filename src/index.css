@@ -44,3 +44,10 @@ select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+.even-sec {
+  background-color: #f9f9f9;
+}
+
+.odd-sec {
+  background-color: #eeeeee;
+}

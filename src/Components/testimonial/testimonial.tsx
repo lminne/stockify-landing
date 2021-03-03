@@ -11,12 +11,13 @@ interface AppProps {
     testimonialUserName: string,
     testimonialUserProfession: string,
     testimonialUserImg: any,
+    style?:object,
 }
 
 class TestimonialCard extends Component<AppProps, AppState> {
     render() {
         return (
-            <div className={"testimonialCard"}>
+            <div style={this.props.style} className={"testimonialCard"}>
                 <div className={"innerTestimonialCard"}>
                     <div className={"testimonialText"}>
 

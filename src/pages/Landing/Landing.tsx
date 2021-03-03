@@ -46,7 +46,7 @@ class Landing extends Component<AppProps, AppState> {
                 <HeroSec/>
                 <TestimonialSection/>
                 <GetStarted/>
-                <div id={"features-section"}>
+                <div id={"features-section"} className={"odd-sec"}>
                     <div className={"section"}>
                         <div>
                             <PrimaryHeading style={{textAlign:"center"}} text={"The Features"}/>

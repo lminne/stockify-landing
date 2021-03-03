@@ -20,7 +20,7 @@ class HeroSec extends Component<AppProps, AppState> {
     render() {
         return (
             <div id={"hero-section"}>
-                <div className={"section"}>
+                <div className={"section even-sec"}>
                     <div className={"container"}>
 
                         <div className={"hero-text"}>
@@ -63,7 +63,7 @@ class HeroSec extends Component<AppProps, AppState> {
 
                 </div>
                 <div className={"section"}>
-                    <div className={"normal_div"} style={{paddingTop: "2rem"}}>
+                    <div className={"normal_div"} style={{paddingTop: "0.5rem", paddingBottom:"1rem"}}>
 
                         <a href="#get-started-section"><ArrowDown/></a>
                     </div>

@@ -19,9 +19,9 @@ interface AppProps {
 class TestimonialSection extends Component<AppProps, AppState> {
     render() {
         return (
-            <div id={"testimonial-section"} className={"section"}>
+            <div id={"testimonial-section"} className={"section odd-sec"}>
                 <div className={"testimonial-container"}>
-                    <TestimonialCard testimonialUserImg={FaceOne} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Leonardo"} testimonialUserProfession={"Pro Gamer"}/>
+                    <TestimonialCard style={{paddingTop:0}} testimonialUserImg={FaceOne} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Leonardo"} testimonialUserProfession={"Pro Gamer"}/>
                     <TestimonialCard testimonialUserImg={FaceTwo} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Jona"} testimonialUserProfession={"Taubenzüchter"}/>
                     <TestimonialCard testimonialUserImg={FaceThree} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Alex"} testimonialUserProfession={"Account Manager"}/>
 

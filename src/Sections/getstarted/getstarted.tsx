@@ -22,7 +22,7 @@ interface AppProps {
 class GetStarted extends Component<AppProps, AppState> {
     render() {
         return (
-            <div id={"get-started-section"} className={"section"}>
+            <div id={"get-started-section"} className={"section even-sec"}>
                 <div style={{width:"100%"}}>
                     <PrimaryHeading style={{textAlign:"center"}} text={"Get started"}/>
                     <SecondaryHeading style={{textAlign:"center"}} text={"Setting up Stockify"}/>
