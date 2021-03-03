@@ -6,6 +6,7 @@ import Footer from "../../Sections/footer/footer";
 import "./Impressum.css"
 import Contact from "../../Sections/Contact/Contact";
 import Legal from "../../Sections/Legal/Legal";
+import Header from "../../Components/Header/Header";
 
 interface AppState {
 
@@ -38,8 +39,12 @@ class Impressum extends Component<AppProps, AppState> {
 
         return (
             <div id={"app"}>
-                <Legal/>
-                <Footer/>
+                <Header/>
+                <div className={"navbar-margin"}>
+                    <Legal/>
+                    <Footer/>
+                </div>
+
             </div>
         )
     }

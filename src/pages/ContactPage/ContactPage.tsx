@@ -5,6 +5,8 @@ import {inject, observer} from "mobx-react";
 import Footer from "../../Sections/footer/footer";
 import "./ContactPage.css"
 import Contact from "../../../src/Sections/Contact/Contact"
+import ContactForm from "../../Sections/ContactForm/ContactForm";
+import Header from "../../Components/Header/Header";
 
 interface AppState {
 
@@ -37,11 +39,12 @@ class ContactPage extends Component<AppProps, AppState> {
 
         return (
             <div id={"contactPage"}>
-                <div className={"contact-page-holder"}>
+                <Header/>
+                <div className={"contact-page-holder navbar-margin"}>
                     <Contact/>
+                    <ContactForm/>
                     <Footer/>
                 </div>
-
             </div>
         )
     }

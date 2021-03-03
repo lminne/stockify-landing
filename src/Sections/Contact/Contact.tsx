@@ -24,7 +24,7 @@ class Contact extends Component<AppProps, AppState> {
             <div className={"section contact-sec"}>
                 <div style={{width:"100%"}}>
                     <PrimaryHeading style={{textAlign:"center"}} text={"Contact us"}/>
-                    <SecondaryHeading style={{textAlign:"center"}} text={"Get in touch"}/>
+                    <SecondaryHeading style={{textAlign:"center"}} text={"Information"}/>
                     <div className={"get-started-container"}>
                         <ContactItem mail={true} IconComp={<Mail/>} subheadingText={"info@stockify.de"} headingText={"Mail"}/>
                         <ContactItem mail={false} IconComp={<Call/>} subheadingText={"+49 123 456 789"} headingText={"Phone"}/>

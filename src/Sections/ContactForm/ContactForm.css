@@ -1,0 +1,91 @@
+.contact-form {
+    width: 100%;
+    border-radius: 12px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: StockifySecondary, sans-serif;
+
+}
+.contact-form-box {
+    width: 60%;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+.grid-container-contact {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2 ,minmax(50%, 1fr));
+}
+
+#contactform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: StockifySecondary,sans-serif;
+
+}
+
+.input-field {
+    width: 80%;
+    border: none;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family: StockifySecondary, sans-serif;
+    outline: none;
+}
+
+.input-field:focus {
+    border: none;
+    outline: none;
+}
+
+#message {
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 200px;
+    min-height: 50px;
+}
+
+.form-row {
+    padding-top: 2rem;
+}
+
+.label-text {
+    font-family: StockifyMain, sans-serif;
+    color: #3F414E;
+}
+
+#contact-form-submit {
+    border: none;
+    border-radius: 12px;
+    color: #f9f9f9;
+    background-color: #34CD9E;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    min-width: 200px;
+    min-height: 50px;
+    font-family: StockifyMain,sans-serif;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .submit-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-form-submit {
+        width: 97%;
+    }
+    .grid-container-contact {
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }
+    .input-field {
+        width: 90%;
+    }
+}

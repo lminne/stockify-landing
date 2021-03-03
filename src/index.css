@@ -51,3 +51,7 @@ a {
 .odd-sec {
   background-color: #eeeeee;
 }
+
+.navbar-margin {
+  margin-top: 60px;
+}
