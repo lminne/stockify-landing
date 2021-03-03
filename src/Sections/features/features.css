@@ -1,5 +1,5 @@
 .featureContainer {
-    width: 100%;
+    width: 85%;
 
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -7,6 +7,14 @@
 .perfHero {
     max-height: 700px;
     max-width: 100% !important;
+}
+
+.featureSingle {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perf-hero-col {

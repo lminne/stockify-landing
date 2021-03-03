@@ -7,7 +7,9 @@ import Button from "../Button/button";
 import Heading from "../Heading/heading";
 
 interface AppState {
-    clicked: boolean
+    clicked: boolean,
+    width:number,
+    height:number,
 }
 
 interface AppProps {
@@ -22,16 +24,26 @@ class Header extends Component<AppProps, AppState> {
         super(props);
 
         this.state = {
-            clicked: false
+            clicked: false,
+            width: window.innerWidth,
+            height: window.innerHeight,
         };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
     }
 
     componentDidMount() {
         window.addEventListener('scroll', this.scrollHandler);
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.scrollHandler);
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
     onclick = () => {
@@ -85,7 +97,7 @@ class Header extends Component<AppProps, AppState> {
             fontWeight: 400,
         };
         // @ts-ignore
-        if (this.props.general?.getWidth <= 800) { // Mobile Version
+        if (this.state.width <= 1000) { // Mobile Version
             return (
                 <div className={classname} id="header">
                     <div id="header_left_content">

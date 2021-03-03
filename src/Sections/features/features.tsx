@@ -47,12 +47,12 @@ class Features extends Component<AppProps, AppState> {
         // @ts-ignore
         const {windowWidth} = this.state
 
-        if (windowWidth <= 1200) {
+        if (windowWidth <= 992) {
 
             pic_first = true
         }
         return (
-            <div className={"section"}>
+            <div className={"featureSingle"}>
 
                 <div className={"featureContainer"}>
                     {pic_first?<div style={{width:"100%"}} className={"perf-hero-col"}>
