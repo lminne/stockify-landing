@@ -42,9 +42,9 @@ class App extends Component<AppProps, AppState> {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route path="/" exact component={Landing}/>
-                    <Route path="/impressum" exact component={Impressum}/>
-                    <Route path="/contact" exact component={ContactPage}/>
+                    <Route path={"/"} exact component={Landing}/>
+                    <Route path={"/impressum"} exact component={Impressum}/>
+                    <Route path={"/contact"} exact component={ContactPage}/>
                     <Redirect to={"/not found"}/>
 
                 </Switch>

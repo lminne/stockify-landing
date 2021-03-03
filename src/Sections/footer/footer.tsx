@@ -35,12 +35,12 @@ class Footer extends Component<AppProps, AppState> {
                             <div className={"company-name"}>Stockify</div>
                             <div>
                                 <div className={"contact-button"}>
-                                    <a className={"link-text"} href="/contact">Contact us</a>
+                                    <a style={{width:"100%", height:"100%", display:"flex", alignItems:"center", justifyContent:"center"}} className={"link-text"} href="/contact">Contact us</a>
                                 </div>
                             </div>
                             <div>
                                 <div className={"contact-button"}>
-                                    <a className={"link-text"} href="/impressum">The boring stuff</a>
+                                    <a style={{width:"100%", height:"100%", display:"flex", alignItems:"center", justifyContent:"center"}} className={"link-text"} href="/impressum">The boring stuff</a>
                                 </div>
                             </div>
 
