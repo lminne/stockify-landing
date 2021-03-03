@@ -1,5 +1,5 @@
 .get-started-item {
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     display: flex;
@@ -7,13 +7,7 @@
     justify-content: center;
 }
 
-.get-started-item {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .todo-icon {
     display: flex;
