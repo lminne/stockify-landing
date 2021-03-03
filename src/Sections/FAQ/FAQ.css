@@ -6,6 +6,8 @@
 }
 
 .accordion__item {
+    border-radius: 12px;
+    background-color: #f4f4f4;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -25,8 +27,13 @@
     border: none;
     outline: none;
     border-radius: 12px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
 }
 
+.accordion__item:hover {
+    background-color: #f1f1f1;
+}
 .accordion__button:hover {
     background-color: #f1f1f1;
 }
@@ -34,8 +41,8 @@
 .accordion__button:before {
     display: inline-block;
     content: '';
-    height: 10px;
-    width: 10px;
+    height: 11px;
+    width: 11px;
     margin-right: 12px;
     border-bottom: 4px solid #34CD9E;
     border-right: 4px solid #34CD9E;
@@ -53,11 +60,17 @@
 
 .accordion__panel {
     font-family: StockifySecondary, sans-serif;
-    padding: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
     animation: fadein 0.5s ease-in;
     border-radius: 12px;
     padding-left: 3rem;
 
+}
+
+.answer-para {
+    line-height: 1.5rem;
 }
 
 @keyframes fadein {

@@ -29,75 +29,82 @@ class FAQ extends Component<AppProps, AppState> {
                         <PrimaryHeading style={{textAlign:"center"}} text={"FAQ"}/>
                         <SecondaryHeading style={{textAlign:"center"}} text={"Everything you need to know"}/>
                         <div className={"normal_div"}>
-                            <Accordion style={{width:"90%"}} allowZeroExpanded={true}>
+                            <Accordion style={{width:"90%", paddingTop:"1.5rem"}} allowZeroExpanded={true}>
                                 <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            What harsh truths do you prefer to ignore?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
+                                    <div className={"normal_div"}>
+                                        <AccordionItemHeading >
+                                            <AccordionItemButton>
+                                                Where do I get Stockify?
+                                            </AccordionItemButton>
+                                        </AccordionItemHeading>
+                                    </div>
+
                                     <AccordionItemPanel>
-                                        <p>
-                                            Exercitation in fugiat est ut ad ea cupidatat ut in
-                                            cupidatat occaecat ut occaecat consequat est minim minim
-                                            esse tempor laborum consequat esse adipisicing eu
-                                            reprehenderit enim.
+                                        <p className={"answer-para"}>
+                                            Stockify is available in both the Apple App Store and the Google Play Store. Download the latest version for your device <a className={"link-text"} href="">here</a>
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
                                 <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Is free will real or just an illusion?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
+                                    <div className={"normal_div"}>
+                                        <AccordionItemHeading>
+                                            <AccordionItemButton>
+                                                What about my personal data?
+                                            </AccordionItemButton>
+                                        </AccordionItemHeading>
+                                    </div>
+
                                     <AccordionItemPanel>
-                                        <p>
-                                            In ad velit in ex nostrud dolore cupidatat consectetur
-                                            ea in ut nostrud velit in irure cillum tempor laboris
-                                            sed adipisicing eu esse duis nulla non.
+                                        <p className={"answer-para"}>
+                                            Data Privacy is extremely important to us! Without your consens no personal data is collected or even shared with third parties. Additionally, all data which is consensually collected is stored anonymised. Read more in our <a className={"link-text"}
+                                            href="">Privacy Policy</a>.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
                                 <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Is free will real or just an illusion?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
+                                    <div className={"normal_div"}>
+                                        <AccordionItemHeading>
+                                            <AccordionItemButton>
+                                                How can I save my Portfolio?
+                                            </AccordionItemButton>
+                                        </AccordionItemHeading>
+                                    </div>
+
                                     <AccordionItemPanel>
-                                        <p>
-                                            In ad velit in ex nostrud dolore cupidatat consectetur
-                                            ea in ut nostrud velit in irure cillum tempor laboris
-                                            sed adipisicing eu esse duis nulla non.
+                                        <p className={"answer-para"}>
+                                            You can save your Portfolio either by creating an account which automatically syncs your portfolio with your user account or by exporting your current portfolio as .csv file which you can upload again e.g, on your new phone.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
                                 <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Is free will real or just an illusion?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
+                                    <div className={"normal_div"}>
+                                        <AccordionItemHeading>
+                                            <AccordionItemButton>
+                                                Why is the App so buggy?
+                                            </AccordionItemButton>
+                                        </AccordionItemHeading>
+                                    </div>
+
                                     <AccordionItemPanel>
-                                        <p>
-                                            In ad velit in ex nostrud dolore cupidatat consectetur
-                                            ea in ut nostrud velit in irure cillum tempor laboris
-                                            sed adipisicing eu esse duis nulla non.
+                                        <p className={"answer-para"}>
+                                            This is mainly due to the fact that Jona, our CTO, only produces so-called "Tauben". Feel free to <a className={"link-text"}
+                                            href="mailto:jona@stockify.app?subject=Jona%20suckt%20Dick">insult him</a> as much as you like!
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
                                 <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Is free will real or just an illusion?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
+                                    <div className={"normal_div"}>
+                                        <AccordionItemHeading>
+                                            <AccordionItemButton>
+                                                Why is feature X missing?
+                                            </AccordionItemButton>
+                                        </AccordionItemHeading>
+                                    </div>
+
                                     <AccordionItemPanel>
-                                        <p>
-                                            In ad velit in ex nostrud dolore cupidatat consectetur
-                                            ea in ut nostrud velit in irure cillum tempor laboris
-                                            sed adipisicing eu esse duis nulla non.
+                                        <p className={"answer-para"}>
+                                            If you have serious features requests that would make your life easier - <a className={"link-text"}
+                                            href="mailto:minne@stockify.app?subject=Feature%20Request">get in touch</a> with us!
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
