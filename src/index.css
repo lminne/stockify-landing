@@ -19,10 +19,6 @@ code {
     monospace;
 }
 
-#app {
-  max-width: 100%;
-}
-
 @media only screen and (max-width: 500px) {
   #app {
     width: 100%;
@@ -44,6 +40,7 @@ select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 .even-sec {
   background-color: #f9f9f9;
 }
