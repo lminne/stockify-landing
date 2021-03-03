@@ -47,8 +47,14 @@ class Landing extends Component<AppProps, AppState> {
                 <TestimonialSection/>
                 <GetStarted/>
                 <div id={"features-section"}>
-                    <PrimaryHeading style={{textAlign:"center"}} text={"The Features"}/>
-                    <SecondaryHeading style={{textAlign:"center"}} text={"The All-in-One Tool to manage your Portfolio"}/>
+                    <div className={"section"}>
+                        <div>
+                            <PrimaryHeading style={{textAlign:"center"}} text={"The Features"}/>
+                            <SecondaryHeading style={{textAlign:"center"}} text={"The All-in-One Tool to manage your Portfolio"}/>
+                        </div>
+
+                    </div>
+
                     <Features fheading_1={"Portfolio Performance"} fheading_2={"Diversification"}
                               fheading_3={"Portfolio Measures"}
                               fsubheading_1={"Track the performance of all your holdings in one place"}
