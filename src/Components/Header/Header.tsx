@@ -104,7 +104,7 @@ class Header extends Component<AppProps, AppState> {
 
                         <div id="header_title" onClick={() => {
                             window.location.href = "/"
-                        }}>Stockify Mobile {this.props.general?.getWidth}
+                        }}>Stockify
                         </div>
                     </div>
                     <div className="header_right_content">
@@ -135,7 +135,7 @@ class Header extends Component<AppProps, AppState> {
 
                         <div id="header_title" onClick={() => {
                             window.location.href = "/"
-                        }}>Stockify Desktop
+                        }}>Stockify
                         </div>
                     </div>
                     <div className={"header_right_content"} style={{paddingRight: 0}}>
