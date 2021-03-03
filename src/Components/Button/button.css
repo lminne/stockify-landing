@@ -3,21 +3,35 @@
     border-radius: 50px;
     border: none;
     color:#F9F9F9;
-    height: 45px;
-    width: 250px;
+    height: 65px;
+    width: 300px;
     font-size: 20px;
     font-family: StockifyMain, sans-serif;
     outline: none;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1200px) {
     .get-started {
-        height:45px;
-        width: 200px;
+        height:55px;
+        width: 260px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .get-started {
+        height:40px;
+        width: 220px;
         font-size: 25px;
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .get-started {
+        height:55px;
+        width: 260px;
+        font-size: 25px;
+    }
+}
 
 
 

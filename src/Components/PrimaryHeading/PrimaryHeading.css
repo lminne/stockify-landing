@@ -6,6 +6,12 @@
     margin-top: 0.75rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .h1-primary {
+        font-size: 60px;
+    }
+}
+
 @media only screen and (max-width: 992px) {
 
     .h1-primary {

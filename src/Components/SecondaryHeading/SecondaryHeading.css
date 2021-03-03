@@ -5,6 +5,12 @@
     margin-top: 1rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .h3-secondary {
+        font-size: 32px;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .h3-secondary {
         font-size: 22px;

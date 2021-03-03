@@ -33,7 +33,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
 
 .hero-item {
@@ -61,10 +61,6 @@
     min-width: 300px;
 }
 
-
-
-
-
 .button-group-desktop {
     display: flex;
     align-items: center;
@@ -75,12 +71,13 @@
 .btn-holder-desktop {
     padding-right: 1.5rem;
 }
-.btn-holder-mobile {
-    display: none;
-}
+
 
 
 @media only screen and (max-width: 992px) {
+    .button-group-desktop {
+        display: none;
+    }
 
     .section {
         display: flex;
@@ -94,12 +91,31 @@
     .container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
     .hero-img {
         max-width: 100%;
         min-width: 300px;
     }
+    .cta-container {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-group-mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .btn-holder-mobile {
+        padding-right: 0.5rem;
+        padding-left:0.5rem;
+    }
+
 
 
 
@@ -125,15 +141,14 @@
 
     .button-group-mobile {
         width: 100%;
+        display: block;
 
     }
 
     .button-group-desktop {
         display: none;
     }
-    .btn-holder-desktop {
-        display: none;
-    }
+
 
     .btn-holder-mobile {
         width: auto;
