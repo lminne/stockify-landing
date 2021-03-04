@@ -118,9 +118,11 @@ class Header extends Component<AppProps, AppState> {
                         </div>
                     </div>
                     <div className="header_menu">
-                        <a onClick={() => {this.onclick()}} href="/#testimonial-section" className={"link-text"}><Heading text={"Testimonials"} style={{marginTop: "100px"}}/></a>
+                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#features-section"><Heading text={"Features"} style={{marginTop: "100px"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#get-started-section"><Heading text={"Get started"} style={{marginTop: "0"}}/></a>
-                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#features-section"><Heading text={"Features"} style={{marginTop: "0"}}/></a>
+
+                        <a onClick={() => {this.onclick()}} href="/#testimonial-section" className={"link-text"}><Heading text={"Testimonials"} style={{marginTop: "0"}}/></a>
+                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#faq-section"><Heading text={"FAQ"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/impressum"><Heading text={"About us"} style={{marginTop: 0}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/contact"><Heading text={"Contact"} style={{marginTop: 0}}/></a>
 
@@ -140,18 +142,22 @@ class Header extends Component<AppProps, AppState> {
                     </div>
                     <div className={"header_right_content"} style={{paddingRight: 0}}>
                         <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/#testimonial-section"
-                        }}>Testimonials
+                            window.location.href = "/#features-section"
+                        }}>Features
                         </div>
-
                         <div className={"header_right_content_link"} onClick={() => {
                             window.location.href = "/#get-started-section"
                         }}>Get started
                         </div>
                         <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/#features-section"
-                        }}>Features
+                            window.location.href = "/#testimonial-section"
+                        }}>Testimonials
                         </div>
+                        <div className={"header_right_content_link"} onClick={() => {
+                            window.location.href = "/#faq-section"
+                        }}>FAQ
+                        </div>
+
                         <div className={"header_right_content_link"} onClick={() => {
                             window.location.href = "/impressum"
                         }}>About us

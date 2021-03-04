@@ -46,8 +46,6 @@ class Landing extends Component<AppProps, AppState> {
                 <Header/>
                 <div className={"navbar-margin"}>
                     <HeroSec/>
-                    <TestimonialSection/>
-                    <GetStarted/>
                     <div id={"features-section"} className={"section odd-sec"}>
                         <div>
                             <div>
@@ -69,7 +67,10 @@ class Landing extends Component<AppProps, AppState> {
                                       fsubheading_2={"Build fantasy portfolio and compare their performance"}
                                       fsubheading_3={"Sell positions and keep track of your realized gains"} first_img={false} picture_first={false}/>
                         </div>
-                        </div>
+                    </div>
+
+                    <GetStarted/>
+                    <TestimonialSection/>
 
                     <FAQ/>
                     <Footer/>

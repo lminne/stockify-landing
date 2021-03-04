@@ -33,11 +33,7 @@ code {
   width: 100% !important;
 }
 
-input,
-textarea,
-button,
-select,
-a {
+* {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -46,7 +42,7 @@ a {
 }
 
 .odd-sec {
-  background-color: #eeeeee;
+  background-color: #f9f9f9;
 }
 
 .navbar-margin {
