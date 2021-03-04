@@ -80,7 +80,7 @@ class FAQ extends Component<AppProps, AppState> {
                                     <div className={"normal_div"}>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Can I add single stocks to my Portfolio?
+                                                Can I add single stocks?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                     </div>
