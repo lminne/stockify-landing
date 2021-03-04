@@ -80,15 +80,14 @@ class FAQ extends Component<AppProps, AppState> {
                                     <div className={"normal_div"}>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Why is the App so buggy?
+                                                Can I add single stocks to my Portfolio?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                     </div>
 
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
-                                            This is mainly due to the fact that Jona, our CTO, only produces so-called "Tauben". Feel free to <a className={"link-text"}
-                                            href="mailto:jona@stockify.app?subject=Jona%20suckt%20Dick">insult him</a> as much as you like!
+                                            Unfortunately, we do not support that yet, however, we are working really hard to provide it.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
