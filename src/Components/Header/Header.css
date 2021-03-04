@@ -99,6 +99,8 @@
     align-items: flex-end;
     cursor: pointer;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .header_right_menu_top{
