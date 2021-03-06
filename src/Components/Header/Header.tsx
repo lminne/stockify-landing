@@ -75,7 +75,6 @@ class Header extends Component<AppProps, AppState> {
     scrollHandler = () => {
         const header = document.getElementById("header");
         if (header) {
-            console.log(header.offsetTop)
             const sticky = header.offsetTop;
             if (window.pageYOffset > sticky) {
                 this.props.general?.setSticky(true);

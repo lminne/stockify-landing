@@ -7,6 +7,7 @@ import {Switch, Route, Redirect, BrowserRouter} from 'react-router-dom';
 import Landing from "./pages/Landing/Landing"
 import Impressum from "./pages/Impressum/Impressum";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import Privacy from "./pages/Privacy/Privacy";
 
 
 
@@ -45,6 +46,7 @@ class App extends Component<AppProps, AppState> {
                     <Route path={"/"} exact component={Landing}/>
                     <Route path={"/impressum"} exact component={Impressum}/>
                     <Route path={"/contact"} exact component={ContactPage}/>
+                    <Route path={"/privacy"} exact component={Privacy}/>
                     <Redirect to={"/not found"}/>
 
                 </Switch>

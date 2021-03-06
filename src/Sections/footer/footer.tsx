@@ -40,9 +40,15 @@ class Footer extends Component<AppProps, AppState> {
                             </div>
                             <div>
                                 <div className={"contact-button"}>
-                                    <a style={{width:"100%", height:"100%", display:"flex", alignItems:"center", justifyContent:"center"}} className={"link-text"} href="/impressum">The boring stuff</a>
+                                    <a style={{width:"100%", height:"100%", display:"flex", alignItems:"center", justifyContent:"center"}} className={"link-text"} href="/privacy">Privacy</a>
                                 </div>
                             </div>
+                            <div>
+                                <div className={"contact-button"}>
+                                    <a style={{width:"100%", height:"100%", display:"flex", alignItems:"center", justifyContent:"center"}} className={"link-text"} href="/impressum">Imprint</a>
+                                </div>
+                            </div>
+
 
                         </div>
 
