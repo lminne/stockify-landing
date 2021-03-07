@@ -11,6 +11,7 @@ import PrimaryHeading from "../../Components/PrimaryHeading/PrimaryHeading";
 import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading";
 import FAQ from "../../Sections/FAQ/FAQ";
 import Header from "../../Components/Header/Header";
+import Cookie from "../../Components/CookieConsent/CookieConsent";
 
 
 interface AppState {
@@ -44,6 +45,7 @@ class Landing extends Component<AppProps, AppState> {
 
             <div id={"app"}>
                 <Header/>
+                <Cookie/>
                 <div className={"navbar-margin"}>
                     <HeroSec/>
                     <div id={"features-section"} className={"section odd-sec"}>
