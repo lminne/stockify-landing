@@ -96,7 +96,7 @@ class Header extends Component<AppProps, AppState> {
             fontWeight: 400,
         };
         // @ts-ignore
-        if (this.state.width <= 1000) { // Mobile Version
+        if (this.state.width <= 1200) { // Mobile Version
             return (
                 <div className={classname} id="header">
                     <div id="header_left_content">
@@ -132,7 +132,7 @@ class Header extends Component<AppProps, AppState> {
         } else {
             return <div className={"flex-column-center " + classname}>
                 <div id="header">
-                    <div id="header_left_content" style={{paddingLeft: 0}}>
+                    <div id="header_left_content" style={{paddingLeft: "1rem"}}>
 
                         <div id="header_title" onClick={() => {
                             window.location.href = "/"
@@ -167,7 +167,7 @@ class Header extends Component<AppProps, AppState> {
                         </div>
 
                     </div>
-                    <div>
+                    <div style={{paddingRight: "1rem"}}>
                         <Button style={buttonStyle} text={"Get started"} onClickFunction={() => {
                         }}/>
                     </div>
