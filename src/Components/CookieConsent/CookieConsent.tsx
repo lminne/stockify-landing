@@ -36,7 +36,7 @@ class Cookie extends Component<AppProps, AppState> {
 
     render() {
         return (
-             <CookieConsent declineButtonText={"Decline"} enableDeclineButton={true} flipButtons={true} location={"bottom"} declineButtonStyle={declineButton} buttonText={"Accept"} cookieName={"StockifyCookies"} expires={150} buttonStyle={acceptButton} style={bannerstyle}>This website uses cookies to enhance the user experience.</CookieConsent>
+             <CookieConsent buttonWrapperClasses={"button-wrapper"} contentClasses={"cookie-text"} declineButtonText={"Decline"} enableDeclineButton={true} flipButtons={true} location={"bottom"} declineButtonStyle={declineButton} buttonText={"Accept"} cookieName={"StockifyCookies"} expires={150} buttonStyle={acceptButton} style={bannerstyle}>This website uses cookies to enhance the user experience.</CookieConsent>
         );
     }
 

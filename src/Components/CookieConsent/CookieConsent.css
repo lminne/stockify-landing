@@ -1,0 +1,13 @@
+
+@media only screen and (max-width: 650px){
+
+    .button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cookie-text {
+        text-align: center;
+    }
+}
