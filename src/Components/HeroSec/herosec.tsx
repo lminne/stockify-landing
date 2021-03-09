@@ -42,8 +42,13 @@ class HeroSec extends Component<AppProps, AppState> {
 
 
                                             </div>
-                                            <div className={"btn-holder-desktop"}>
-                                                <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+
+                                            <div className={"btn-holder-desktop"} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                                                <div className={"get-started"} style={{display:"flex", justifyContent:"center", alignItems:"center",backgroundColor:"#f9f9f9", borderRadius:"50px", border:"1px solid #34CD9E"}}>
+                                                    <a style={{textDecoration:"none", color:"#34CD9E"}} href="/#features-section">Learn more</a>
+
+                                                </div>
+
 
                                             </div>
                                         </div>
@@ -72,7 +77,10 @@ class HeroSec extends Component<AppProps, AppState> {
                                             <button type={"submit"} className={"get-started"}>Get Beta Access</button>
                                         </div>
                                         <div className={"btn-holder-mobile"}>
-                                            <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+                                            <div className={"get-started"} style={{display:"flex", justifyContent:"center", alignItems:"center",backgroundColor:"#f9f9f9", borderRadius:"50px", border:"1px solid #34CD9E"}}>
+                                                <a style={{textDecoration:"none", color:"#34CD9E"}} href="/#features-section">Learn more</a>
+
+                                            </div>
 
                                         </div>
                                     </div>
