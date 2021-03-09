@@ -128,8 +128,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: 0;
+        padding-left: 0;
         max-width: 100%
     }
 
