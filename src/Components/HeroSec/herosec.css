@@ -22,10 +22,10 @@
     -webkit-box-shadow: 5px 5px 2.5px 0px rgba(187,187,187,0.75);
     -moz-box-shadow: 5px 5px 2.5px 0px rgba(187,187,187,0.75);
     min-height: 65px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-family: StockifySecondaryBold, sans-serif;
-    color: #898989;
+
     outline: none;
 
 }

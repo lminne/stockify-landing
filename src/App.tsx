@@ -8,6 +8,7 @@ import Landing from "./pages/Landing/Landing"
 import Impressum from "./pages/Impressum/Impressum";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import Privacy from "./pages/Privacy/Privacy";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 
 
@@ -47,6 +48,7 @@ class App extends Component<AppProps, AppState> {
                     <Route path={"/impressum"} exact component={Impressum}/>
                     <Route path={"/contact"} exact component={ContactPage}/>
                     <Route path={"/privacy"} exact component={Privacy}/>
+                    <Route path={"/thankyou"} exact component={ThankYou}/>
                     <Redirect to={"/not found"}/>
 
                 </Switch>

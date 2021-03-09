@@ -28,7 +28,7 @@ class HeroSec extends Component<AppProps, AppState> {
                                 <PrimaryHeading text={"Understand your Portfolio"}/>
                                 <SecondaryHeading text={"Why ETF Portfolios are not necessarily diversified"}/>
 
-                                <form name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} className={"button-group-desktop"}>
+                                <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} className={"button-group-desktop"}>
                                     <div>
                                         <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                             <div className={"mailform"}>
@@ -59,7 +59,7 @@ class HeroSec extends Component<AppProps, AppState> {
 
                         </div>
                         <div className={"cta-container"}>
-                            <form name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"}>
+                            <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"}>
                                 <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                     <div className={"mailform"}>
                                         <input name={"EMAIL"} placeholder={"Your Mail"} className={"mailinput"} type="email" required={true}/>
