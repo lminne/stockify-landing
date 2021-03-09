@@ -89,12 +89,22 @@
     width: 35px;
     height: 35px;
 }
+@media only screen and (min-width: 1500px) {
+    .footer {
+        min-width: 1500px;
+    }
+}
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
     .footer-sec {
         border-top-right-radius: 75px;
         border-top-left-radius: 75px;
     }
+    .footer {
+        min-width: 100%;
+    }
+
+
 }
 @media only screen and (max-width: 800px) {
     .company-name {

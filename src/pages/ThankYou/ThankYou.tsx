@@ -4,7 +4,8 @@ import {IGeneral} from "../../stores/generals";
 import {inject, observer} from "mobx-react";
 import Footer from "../../Sections/footer/footer";
 import Header from "../../Components/Header/Header";
-
+import {ReactComponent as MailConfirm} from "../../assets/img/mail-confirmation.svg";
+import "./ThankYou.css"
 interface AppState {
 
 }
@@ -38,8 +39,17 @@ class ThankYou extends Component<AppProps, AppState> {
             <div id={"app"}>
                 <Header/>
                 <div className={"navbar-margin"}>
-                    <div>
-                        MOOOOOIN
+                    <div className={"normal_div"}>
+                        <div className={"mail-confirm-container"}>
+                            <div className={"mail-img-container"}>
+                                <MailConfirm className={"mail-confirm"}/>
+                                <div className={"normal_div"}>
+                                    <a className={"keep-browsing"} href="/">Confirm Mail</a>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                     <Footer/>
                 </div>

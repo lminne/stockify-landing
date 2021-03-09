@@ -28,7 +28,7 @@ class Footer extends Component<AppProps, AppState> {
 
     render() {
         return (
-            <div id={"footer-section"} style={{paddingTop:"0", marginTop:"4rem"}} className={"section footer-sec"}>
+            <div id={"footer-section"} style={{paddingTop:"0", marginTop:"4rem"}} className={"normal_div footer-sec"}>
                 <div className={"footer"}>
                     <div className={"footer-item first-footer-item"}>
                         <div>
