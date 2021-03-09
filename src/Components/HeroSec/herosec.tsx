@@ -27,16 +27,30 @@ class HeroSec extends Component<AppProps, AppState> {
                             <div className={"heading-holder"}>
                                 <PrimaryHeading text={"Understand your Portfolio"}/>
                                 <SecondaryHeading text={"Why ETF Portfolios are not necessarily diversified"}/>
-                                <div className={"button-group-desktop"}>
-                                    <div className={"btn-holder-desktop"}>
-                                        <Button text={"Download now"}/>
 
-                                    </div>
-                                    <div className={"btn-holder-desktop"}>
-                                        <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+                                <form name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} className={"button-group-desktop"}>
+                                    <div>
+                                        <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
+                                            <div className={"mailform"}>
+                                                <input name={"EMAIL"} placeholder={"Your Mail"} className={"mailinput"} type="email" required={true}/>
 
+                                            </div>
+                                        </div>
+                                        <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
+                                            <div className={"btn-holder-desktop"}>
+                                                <button type={"submit"} className={"get-started"}>Get Beta Access</button>
+
+
+                                            </div>
+                                            <div className={"btn-holder-desktop"}>
+                                                <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+
+
+                                </form>
 
                             </div>
                         </div>
@@ -45,16 +59,27 @@ class HeroSec extends Component<AppProps, AppState> {
 
                         </div>
                         <div className={"cta-container"}>
-                            <div className={"button-group-mobile"}>
-                                <div className={"btn-holder-mobile"}>
-                                    <Button text={"Download now"}/>
+                            <form name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"}>
+                                <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
+                                    <div className={"mailform"}>
+                                        <input name={"EMAIL"} placeholder={"Your Mail"} className={"mailinput"} type="email" required={true}/>
 
+                                    </div>
                                 </div>
-                                <div className={"btn-holder-mobile"}>
-                                    <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
+                                <div>
+                                    <div className={"button-group-mobile"}>
+                                        <div className={"btn-holder-mobile"}>
+                                            <button type={"submit"} className={"get-started"}>Get Beta Access</button>
+                                        </div>
+                                        <div className={"btn-holder-mobile"}>
+                                            <Button text={"Learn more"} style={{backgroundColor:"transparent", border:"1px solid #34CD9E", color:"#34CD9E"}}/>
 
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
+
+
                         </div>
 
 

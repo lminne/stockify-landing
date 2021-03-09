@@ -14,6 +14,31 @@
     justify-content: center;
 }
 
+.mailinput {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 2.5px 0px rgba(187,187,187,0.75);
+    -webkit-box-shadow: 5px 5px 2.5px 0px rgba(187,187,187,0.75);
+    -moz-box-shadow: 5px 5px 2.5px 0px rgba(187,187,187,0.75);
+    min-height: 65px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: StockifySecondaryBold, sans-serif;
+    color: #898989;
+    outline: none;
+
+}
+
+.mailform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right:1.5rem;
+    width: 100%;
+    padding-bottom: 1.25rem;
+}
+
 
 .normal_div {
     display: flex;
@@ -70,6 +95,7 @@
     min-width: 300px;
 }
 
+
 .button-group-desktop {
     display: flex;
     align-items: center;
@@ -81,9 +107,22 @@
     padding-right: 1.5rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .mailinput {
+        height: 40px;
+    }
+}
 
 
 @media only screen and (max-width: 992px) {
+    .mailform {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .mailinput {
+        height: 55px;
+        font-size: 1rem;
+    }
     .button-group-desktop {
         display: none;
     }

@@ -9,6 +9,7 @@ interface AppProps {
     onClickFunction?: any,
     text?: string,
     style?: object,
+    type?: string,
 }
 
 class Button extends Component<AppProps, AppState> {
