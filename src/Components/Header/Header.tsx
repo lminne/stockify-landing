@@ -122,7 +122,6 @@ class Header extends Component<AppProps, AppState> {
 
                         <a onClick={() => {this.onclick()}} href="/#testimonial-section" className={"link-text"}><Heading text={"Testimonials"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#faq-section"><Heading text={"FAQ"} style={{marginTop: "0"}}/></a>
-                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/impressum"><Heading text={"About us"} style={{marginTop: 0}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/contact"><Heading text={"Contact"} style={{marginTop: 0}}/></a>
 
                     </div>
@@ -157,10 +156,7 @@ class Header extends Component<AppProps, AppState> {
                         }}>FAQ
                         </div>
 
-                        <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/impressum"
-                        }}>About us
-                        </div>
+
                         <div className={"header_right_content_link"} onClick={() => {
                             window.location.href = "/contact"
                         }}>Contact
