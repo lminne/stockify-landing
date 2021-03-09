@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-.mailinput {
+#mailinput {
     width: 100%;
     border-radius: 50px;
     border: none;
@@ -105,7 +105,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .mailinput {
+    #mailinput {
         height: 40px;
     }
 }
@@ -116,7 +116,7 @@
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-    .mailinput {
+    #mailinput {
         height: 55px;
         font-size: 1rem;
     }
@@ -168,6 +168,22 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .mailform {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+    #mailinput {
+        width: 260px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+        min-height: 0;
+        height: 55px;
+
+    }
+
     .container {
         padding-top:0.5rem;
         padding-bottom: 0.5rem;
