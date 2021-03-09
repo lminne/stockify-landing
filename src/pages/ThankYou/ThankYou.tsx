@@ -42,7 +42,10 @@ class ThankYou extends Component<AppProps, AppState> {
                     <div className={"normal_div"}>
                         <div className={"mail-confirm-container"}>
                             <div className={"mail-img-container"}>
-                                <MailConfirm className={"mail-confirm"}/>
+                                <div className={"normal_div"}>
+                                    <MailConfirm className={"mail-confirm"}/>
+                                </div>
+
                                 <div className={"normal_div"}>
                                     <a className={"keep-browsing"} href="/">Confirm Mail</a>
                                 </div>
