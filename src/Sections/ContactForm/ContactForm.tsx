@@ -17,7 +17,7 @@ interface AppProps {
 class ContactForm extends Component<AppProps, AppState> {
     render() {
         return (
-            <div className={"section"}>
+            <div className={"normal_div"}>
                 <div style={{width:"100%"}}>
                     <PrimaryHeading style={{textAlign:"center"}} text={"Get in touch"}/>
                     <SecondaryHeading style={{textAlign:"center"}} text={"Contact Form"}/>
