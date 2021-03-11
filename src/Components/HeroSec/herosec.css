@@ -54,6 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+
     padding-top: max(2rem, 60px);
     padding-bottom: max(2rem, 60px);
 }

@@ -3,7 +3,7 @@ import './App.css';
 import './Components/Navbar/navbar';
 import {IGeneral} from "./stores/generals";
 import {inject, observer} from "mobx-react";
-import {Switch, Route, Redirect, BrowserRouter} from 'react-router-dom';
+import {Switch, Route, Redirect, HashRouter} from 'react-router-dom';
 import Landing from "./pages/Landing/Landing"
 import Impressum from "./pages/Impressum/Impressum";
 import ContactPage from "./pages/ContactPage/ContactPage";
@@ -42,7 +42,7 @@ class App extends Component<AppProps, AppState> {
 
 
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <Switch>
                     <Route path={"/"} exact component={Landing}/>
                     <Route path={"/impressum"} exact component={Impressum}/>
@@ -52,7 +52,7 @@ class App extends Component<AppProps, AppState> {
                     <Redirect to={"/not found"}/>
 
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
 
         )
     }
