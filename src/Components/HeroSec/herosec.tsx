@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './herosec.css'
-import HeroImg from "../../assets/img/Hero-Mockup.png";
+import HeroImg from "../../assets/img/Hero-Mockup.webp";
 import Button from "../Button/button";
 import {ReactComponent as ArrowDown} from "../../assets/img/Down-Arrow.svg";
 import PrimaryHeading from "../PrimaryHeading/PrimaryHeading";
@@ -32,7 +32,7 @@ class HeroSec extends Component<AppProps, AppState> {
                                     <div>
                                         <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                             <div className={"mailform"}>
-                                                <input name={"EMAIL"} placeholder={"Your Mail"} id={"mailinput"} type="email" required={true}/>
+                                                <input name={"EMAIL"} aria-label={"betamailinput"} placeholder={"Your Mail"} id={"mailinput"} type="email" required={true}/>
 
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@ class HeroSec extends Component<AppProps, AppState> {
                             <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"}>
                                 <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                     <div className={"mailform"}>
-                                        <input name={"EMAIL"} placeholder={"Your Mail"} id={"mailinput"} type="email" required={true}/>
+                                        <input name={"EMAIL"} aria-label={"betamailinput"} placeholder={"Your Mail"} id={"mailinput"} type="email" required={true}/>
 
                                     </div>
                                 </div>

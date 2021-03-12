@@ -41,7 +41,7 @@ class FAQ extends Component<AppProps, AppState> {
 
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
-                                            Stockify is available in both the Apple App Store and the Google Play Store. Download the latest version for your device <a className={"link-text"} href="">here</a>
+                                            Get your beta access <a className={"link-text"} href="/#hero-section">here</a>
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
@@ -57,7 +57,7 @@ class FAQ extends Component<AppProps, AppState> {
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
                                             Data Privacy is extremely important to us! Without your consens no personal data is collected or even shared with third parties. Additionally, all data which is consensually collected is stored anonymised. Read more in our <a className={"link-text"}
-                                            href="">Privacy Policy</a>.
+                                            href="/impressum">Privacy Policy</a>.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
@@ -72,7 +72,7 @@ class FAQ extends Component<AppProps, AppState> {
 
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
-                                            You can save your Portfolio either by creating an account which automatically syncs your portfolio with your user account or by exporting your current portfolio as .csv file which you can upload again e.g, on your new phone.
+                                            Currently we do not support saving your portfolio. However, we are already working on implementing portfolio synchronisation.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
@@ -95,7 +95,7 @@ class FAQ extends Component<AppProps, AppState> {
                                     <div className={"normal_div"}>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Why is feature X missing?
+                                                Do you have feature ideas?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                     </div>
@@ -103,7 +103,7 @@ class FAQ extends Component<AppProps, AppState> {
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
                                             If you have serious features requests that would make your life easier - <a className={"link-text"}
-                                            href="mailto:minne@stockify.app?subject=Feature%20Request">get in touch</a> with us!
+                                            href="/contact">get in touch</a> with us!
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>

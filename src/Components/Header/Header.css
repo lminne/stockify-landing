@@ -8,6 +8,10 @@
     z-index: 1;
 
 }
+.navitem-active {
+    color: #34CD9E;
+}
+
 .flex-column-center {
     box-shadow: none;
     background-color: transparent;

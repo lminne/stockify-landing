@@ -71,6 +71,7 @@
     min-height: 50px;
     font-family: StockifyMain,sans-serif;
     font-size: 1.4rem;
+    outline: none;
 }
 
 @media only screen and (max-width: 650px) {

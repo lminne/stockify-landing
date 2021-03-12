@@ -8,6 +8,7 @@
     font-family: "Future PT Medium", sans-serif;
     color: #898989;
     font-size: 20px;
+    min-height: 110px;
 }
 
 .innerTestimonialCard {
@@ -61,6 +62,8 @@
 @media only screen and (max-width: 650px) {
     .testimonialText {
         font-size: 16px;
+        min-height: 55px;
+
     }
     .testimonialImg {
         height: 50px;

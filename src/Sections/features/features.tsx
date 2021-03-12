@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import "./features.css"
 import Featureitem from "../../Components/featureitem/featureitem";
-import PerfHero from "../../assets/img/PerformanceMockuplarge.png"
-import CountryHero from "../../assets/img/CountryMockuplarge.png"
+import PerfHero from "../../assets/img/PerformanceMockuplarge.webp"
+import CountryHero from "../../assets/img/CountryMockuplarge.webp"
 
 interface AppState {
 

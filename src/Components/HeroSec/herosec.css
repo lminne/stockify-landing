@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'StockifySecondary';
     src: local('StockifySecondary'), url(../../assets/fonts/Montserrat-Light.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "StockifySecondaryBold";
     src: local("StockifySecondaryBold"), url(../../assets/fonts/Montserrat-SemiBold.ttf) format("truetype");
+    font-display: swap;
 }
 #root {
     width: auto;

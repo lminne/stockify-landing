@@ -2,9 +2,9 @@ import React, {Component} from "react";
 import "./testimonials.css"
 import "../../Components/HeroSec/herosec.css"
 import TestimonialCard from "../../Components/testimonial/testimonial";
-import FaceOne from "../../assets/img/face1.png"
-import FaceTwo from "../../assets/img/face2.png"
-import FaceThree from "../../assets/img/face3.png"
+import FaceOne from "../../assets/img/face1.webp"
+import FaceTwo from "../../assets/img/face2.webp"
+import FaceThree from "../../assets/img/face3.webp"
 import PrimaryHeading from "../../Components/PrimaryHeading/PrimaryHeading";
 import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading";
 
@@ -28,9 +28,9 @@ class TestimonialSection extends Component<AppProps, AppState> {
                         <SecondaryHeading style={{textAlign:"center"}} text={"What do our users think?"}/>
 
                         <div className={"testimonial-container"}>
-                            <TestimonialCard testimonialUserImg={FaceOne} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Leonardo"} testimonialUserProfession={"Software Engineer"}/>
-                            <TestimonialCard testimonialUserImg={FaceTwo} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Caro"} testimonialUserProfession={"Student"}/>
-                            <TestimonialCard testimonialUserImg={FaceThree} testimonialText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} testimonialUserName={"Alex"} testimonialUserProfession={"Account Manager"}/>
+                            <TestimonialCard testimonialUserImg={FaceOne} testimonialText={"Finally an app that allows me to track my portfolio while giving me in-depth insights! Huge fan!"} testimonialUserName={"Leonardo"} testimonialUserProfession={"Software Engineer"}/>
+                            <TestimonialCard testimonialUserImg={FaceTwo} testimonialText={"As a beginner, Stockify helps me to understand the composition of my portfolio. Based on this, I can choose new investments."} testimonialUserName={"Caro"} testimonialUserProfession={"Student"}/>
+                            <TestimonialCard testimonialUserImg={FaceThree} testimonialText={"I particularly like the correlation and variance analysis. This enables me to understand my portfolio and diversify it even further."} testimonialUserName={"Alex"} testimonialUserProfession={"Account Manager"}/>
 
                         </div>
                     </div>

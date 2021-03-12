@@ -6,6 +6,7 @@ import {inject, observer} from "mobx-react";
 import Button from "../Button/button";
 import Heading from "../Heading/heading";
 
+
 interface AppState {
     clicked: boolean,
     width:number,
@@ -137,31 +138,31 @@ class Header extends Component<AppProps, AppState> {
                         }}>Stockify
                         </div>
                     </div>
-                    <div className={"header_right_content"} style={{paddingRight: 0}}>
-                        <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/#features-section"
-                        }}>Features
-                        </div>
-                        <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/#get-started-section"
-                        }}>Get started
-                        </div>
-                        <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/#testimonial-section"
-                        }}>Testimonials
-                        </div>
-                        <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/#faq-section"
-                        }}>FAQ
+                        <div className={"header_right_content"} style={{paddingRight: 0}}>
+                            <div className={"header_right_content_link"} onClick={() => {
+                                window.location.href = "/#features-section"
+                            }}>Features
+                            </div>
+                            <div className={"header_right_content_link"} onClick={() => {
+                                window.location.href = "/#get-started-section"
+                            }}>Get started
+                            </div>
+                            <div className={"header_right_content_link"} onClick={() => {
+                                window.location.href = "/#testimonial-section"
+                            }}>Testimonials
+                            </div>
+                            <div className={"header_right_content_link"} onClick={() => {
+                                window.location.href = "/#faq-section"
+                            }}>FAQ
+                            </div>
+
+                            <div className={"header_right_content_link"} onClick={() => {
+                                window.location.href = "/contact"
+                            }}>Contact
+                            </div>
+
                         </div>
 
-
-                        <div className={"header_right_content_link"} onClick={() => {
-                            window.location.href = "/contact"
-                        }}>Contact
-                        </div>
-
-                    </div>
                     <div style={{paddingRight: "1rem"}}>
                         <Button style={buttonStyle} text={"Get started"} onClickFunction={() => {
                         }}/>
