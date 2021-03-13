@@ -32,14 +32,14 @@ class ContactForm extends Component<AppProps, AppState> {
 
         axios({
             method: "POST",
-            url:"http://localhost:3002/send",
+            url:"http://api.stockify.mbyt.de:3002/send",
             data:  this.state
         }).then((response)=>{
             if (response.data.status === 'success') {
-                alert("Message Sent.");
+                console.log("Message successfully send.");
                 this.resetForm()
             } else if(response.data.status === 'fail') {
-                alert("Message failed to send.")
+                console.log("Sending Message failed.");
             }
         })
     }
