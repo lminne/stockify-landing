@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import CookieConsent, {Cookies} from "react-cookie-consent";
+import ReactGA from "react-ga";
 
 import "./CookieConsent.css"
 
@@ -37,7 +38,10 @@ class Cookie extends Component<AppProps, AppState> {
     render() {
         return (
              <CookieConsent
-                 onAccept={() => {console.log("Cookies accepted")}}
+                 onAccept={() => {
+                     ReactGA.initialize('G-7ZNWVL32WV');
+                     ReactGA.pageview(window.location.pathname + window.location.search);
+                 }}
                  buttonWrapperClasses={"button-wrapper"}
                  onDecline={() => {console.log("Cookies declined")}}
                  contentClasses={"cookie-text"}

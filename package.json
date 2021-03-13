@@ -50,6 +50,7 @@
     "axios": "^0.21.1",
     "file-loader": "^6.2.0",
     "mobx": "^6.1.7",
+    "react-ga": "^3.3.0",
     "react-router-dom": "^5.2.0"
   }
 }
