@@ -5,7 +5,7 @@ import {IGeneral} from "../../stores/generals";
 import {inject, observer} from "mobx-react";
 import Button from "../Button/button";
 import Heading from "../Heading/heading";
-
+import Scrollspy from "react-scrollspy";
 
 interface AppState {
     clicked: boolean,
@@ -118,7 +118,8 @@ class Header extends Component<AppProps, AppState> {
                         </div>
                     </div>
                     <div className="header_menu">
-                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#features-section"><Heading text={"Features"} style={{marginTop: "100px"}}/></a>
+                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#hero-section"><Heading text={"Home"} style={{marginTop: "100px"}}/></a>
+                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#features-section"><Heading text={"Features"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#get-started-section"><Heading text={"Get started"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} href="/#testimonial-section" className={"link-text"}><Heading text={"Testimonials"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#faq-section"><Heading text={"FAQ"} style={{marginTop: "0"}}/></a>
@@ -138,7 +139,12 @@ class Header extends Component<AppProps, AppState> {
                         }}>Stockify
                         </div>
                     </div>
-                        <div className={"header_right_content"} style={{paddingRight: 0}}>
+                        <Scrollspy items={["hero-section","features-section","get-started-section","testimonial-section","faq-section", "contactPage"]} currentClassName={"active-nav"} className={"header_right_content"} style={{paddingRight: 0}}>
+                            <div className={"header_right_content_link"} onClick={() => {
+                                window.location.href = "/#hero-section"
+                            }}>Home
+                            </div>
+
                             <div className={"header_right_content_link"} onClick={() => {
                                 window.location.href = "/#features-section"
                             }}>Features
@@ -161,7 +167,7 @@ class Header extends Component<AppProps, AppState> {
                             }}>Contact
                             </div>
 
-                        </div>
+                        </Scrollspy>
 
                     <div style={{paddingRight: "1rem"}}>
                         <Button style={buttonStyle} text={"Get started"} onClickFunction={() => {

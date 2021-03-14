@@ -8,8 +8,9 @@
     z-index: 1;
 
 }
-.navitem-active {
-    color: #34CD9E;
+.active-nav {
+    color: #34CD9E !important;
+    background-color: #f3f3f3;;
 }
 
 .flex-column-center {
