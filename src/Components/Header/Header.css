@@ -16,6 +16,10 @@
 .flex-column-center {
     box-shadow: none;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
 }
 
 .sticky {
@@ -32,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     color: #34CD9E;
-    min-height: 60px;
+    min-height: 80px;
     background-color: #f9f9f9;
 }
 
@@ -185,5 +189,14 @@
         box-shadow: 1.50px 0 3px 1.5px #ccc;
 
     }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #header {
+        min-height: 60px;
+
+    }
+
 
 }
