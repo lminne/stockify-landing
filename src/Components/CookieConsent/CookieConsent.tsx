@@ -39,11 +39,16 @@ class Cookie extends Component<AppProps, AppState> {
         return (
              <CookieConsent
                  onAccept={() => {
-                     ReactGA.initialize('G-7ZNWVL32WV');
-                     ReactGA.pageview(window.location.pathname + window.location.search);
+                     ReactGA.initialize('G-7ZNWVL32WV', {
+                         debug:false,
+                         gaOptions: {
+                             siteSpeedSampleRate:100
+                         }
+                     });
+                     console.log("Cookies accepted.")
                  }}
                  buttonWrapperClasses={"button-wrapper"}
-                 onDecline={() => {console.log("Cookies declined")}}
+                 onDecline={() => {console.log("Cookies declined.")}}
                  contentClasses={"cookie-text"}
                  declineButtonText={"Decline"}
                  enableDeclineButton={true}
