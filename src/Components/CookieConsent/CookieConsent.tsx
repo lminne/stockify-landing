@@ -37,7 +37,7 @@ class Cookie extends Component<AppProps, AppState> {
 
     onAccept(){
         console.log("Cookies accepted.");
-        ReactGA.initialize('G-7ZNWVL32WV');
+        ReactGA.initialize('UA-192059747-1');
         ReactGA.pageview(window.location.pathname + window.location.search);
     }
 
