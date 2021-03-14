@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 2.5rem;
+    max-height: 120px;
 }
 
 .step-heading {
@@ -31,5 +32,6 @@
     font-family: StockifySecondary, sans-serif;
     font-weight: 200;
     text-align: center;
+    min-height: 45px;
 
 }

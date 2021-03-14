@@ -17,6 +17,7 @@ class GetStartedItem extends Component<AppProps, AppState> {
     render() {
         return (
             <div className={"get-started-item"}>
+
                 <div className={"inner-get-started-item"}>
                     <div className={"todo-icon"}>
                         {this.props.IconComp}

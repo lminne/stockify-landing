@@ -5,8 +5,23 @@
     width: 100%;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
 }
+.get-started-line {
+    display: block;
+    height: 1px;
+    width: 65%;
+    border: 0;
+    border-top: 2px dashed #34CD9E;
+    margin-top: 5.75rem;
+    margin-bottom: -5.75rem;
+    padding: 0;
+}
+
 @media only screen and (max-width: 850px) {
     .get-started-container {
         grid-template-columns: repeat(1, minmax(290px, 1fr));
     }
+    .get-started-line {
+        display: none;
+    }
 }
+
