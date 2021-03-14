@@ -24,7 +24,7 @@ interface AppProps {
 class FAQ extends Component<AppProps, AppState> {
     render() {
         return (
-            <div id={"faq-section"} className={"even-sec section"}>
+            <div style={{paddingBottom:"20rem"}} id={"faq-section"} className={"even-sec section"}>
                     <div style={{width:"100%"}}>
                         <PrimaryHeading style={{textAlign:"center"}} text={"FAQ"}/>
                         <SecondaryHeading style={{textAlign:"center"}} text={"Everything you need to know"}/>
