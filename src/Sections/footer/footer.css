@@ -47,7 +47,7 @@
 .page-overview-item {
 
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 
 }
@@ -80,7 +80,7 @@
     font-family: StockifyMain, sans-serif;
     font-size: 20px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 
 }
