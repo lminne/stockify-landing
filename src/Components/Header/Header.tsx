@@ -139,7 +139,7 @@ class Header extends Component<AppProps, AppState> {
                         }}>Stockify
                         </div>
                     </div>
-                        <Scrollspy items={["hero-section","features-section","get-started-section","testimonial-section","faq-section", "contactPage"]} currentClassName={"active-nav"} className={"header_right_content"} style={{paddingRight: 0}}>
+                        <Scrollspy offset={-60} items={["hero-section","features-section","get-started-section","testimonial-section","faq-section", "contactPage"]} currentClassName={"active-nav"} className={"header_right_content"} style={{paddingRight: 0}}>
                             <div className={"header_right_content_link"} onClick={() => {
                                 window.location.href = "/#hero-section"
                             }}>Home

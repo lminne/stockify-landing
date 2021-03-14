@@ -12,6 +12,7 @@ import SecondaryHeading from "../../Components/SecondaryHeading/SecondaryHeading
 import FAQ from "../../Sections/FAQ/FAQ";
 import Header from "../../Components/Header/Header";
 import Cookie from "../../Components/CookieConsent/CookieConsent";
+import ReactGA from "react-ga";
 
 
 interface AppState {

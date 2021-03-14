@@ -45,9 +45,11 @@ class Cookie extends Component<AppProps, AppState> {
         return (
              <CookieConsent
                  onAccept={this.onAccept}
+
                  buttonWrapperClasses={"button-wrapper"}
                  onDecline={()=>{
                      console.log("Cookies declined.");
+
                  }}
                  contentClasses={"cookie-text"}
                  declineButtonText={"Decline"}
