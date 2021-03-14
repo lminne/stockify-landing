@@ -54,6 +54,12 @@ code {
 }
 
 .navbar-margin {
-  margin-top: 60px;
+  margin-top: 80px;
   width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar-margin {
+    margin-top: 60px;
+  }
 }
