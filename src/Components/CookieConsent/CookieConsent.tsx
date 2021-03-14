@@ -33,26 +33,19 @@ let declineButton = {
     minWidth:"150px"
 }
 
-
-
-
-
-
-
 class Cookie extends Component<AppProps, AppState> {
 
     render() {
         return (
              <CookieConsent
                  onAccept={()=> {
-                     ReactGA.initialize("G7ZNWVL32WV");
-                     ReactGA.pageview(window.location.pathname + window.location.search);
                      console.log("Cookies accepted.");
                  }}
                  buttonWrapperClasses={"button-wrapper"}
                  onDecline={()=>{
                      console.log("Cookies declined.");
                  }}
+
                  contentClasses={"cookie-text"}
                  declineButtonText={"Decline"}
                  enableDeclineButton={true}
