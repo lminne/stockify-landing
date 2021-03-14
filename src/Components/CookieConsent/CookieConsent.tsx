@@ -33,20 +33,30 @@ let declineButton = {
     minWidth:"150px"
 }
 
+function cookieAccept(){
+    document.getElementsByTagName("head")[0].innerHTML += "<!-- Global site tag (gtag.js) - Google Analytics -->\n" +
+        "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-7ZNWVL32WV\"></script>\n" +
+        "<script>\n" +
+        "  window.dataLayer = window.dataLayer || [];\n" +
+        "  function gtag(){dataLayer.push(arguments);}\n" +
+        "  gtag('js', new Date());\n" +
+        "\n" +
+        "  gtag('config', 'G-7ZNWVL32WV');\n" +
+        "</script>";
+
+};
+
+
+
+
+
 class Cookie extends Component<AppProps, AppState> {
 
     render() {
         return (
              <CookieConsent
-                 onAccept={() => {
-                     ReactGA.initialize('G-7ZNWVL32WV', {
-                         debug:false,
-                         gaOptions: {
-                             siteSpeedSampleRate:100
-                         }
-                     });
-                     console.log("Cookies accepted.")
-                 }}
+                 onAccept={cookieAccept}
+
                  buttonWrapperClasses={"button-wrapper"}
                  onDecline={() => {console.log("Cookies declined.")}}
                  contentClasses={"cookie-text"}
