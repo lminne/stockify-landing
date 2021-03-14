@@ -95,7 +95,7 @@ class FAQ extends Component<AppProps, AppState> {
                                     <div className={"normal_div"}>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Do you have feature ideas?
+                                                Can users request features?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                     </div>
