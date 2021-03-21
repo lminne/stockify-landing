@@ -25,5 +25,5 @@ jobs:
     - run: tsc
     - run: npm ci
     - run: CI=false npm run build
-    - run: npm test
+    - run: mv /development/actions-runner/stockify-landing-runner/stockify-landing/stockify-landing/public/ /var/www/stockify.de/stockify-landing/public/
 
