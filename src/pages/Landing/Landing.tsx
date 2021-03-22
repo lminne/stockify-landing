@@ -53,7 +53,7 @@ class Landing extends Component<AppProps, AppState> {
                         <div>
                             <div>
                                 <div>
-                                    <PrimaryHeading style={{textAlign:"center"}} text={"The Features :)"}/>
+                                    <PrimaryHeading style={{textAlign:"center"}} text={"The Features"}/>
                                     <SecondaryHeading style={{textAlign:"center"}} text={"The All-in-One Tool to manage your Portfolio"}/>
                                 </div>
 
