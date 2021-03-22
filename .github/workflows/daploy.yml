@@ -26,5 +26,5 @@ jobs:
     - run: CI=false npm run build
     - run: ls
     - run: mv /development/actions-runner/stockify-landing-runner/stockify-landing/stockify-landing/public/* /var/www/stockify.de/stockify-landing/public/
-    
+    - run: mv /development/actions-runner/stockify-landing-runner/stockify-landing/stockify-landing/build/* /var/www/stockify.de/stockify-landing/build/
 
