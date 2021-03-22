@@ -54,12 +54,12 @@ class Landing extends Component<AppProps, AppState> {
                             <div>
                                 <div>
                                     <PrimaryHeading style={{textAlign:"center"}} text={"The Features"}/>
-                                    <SecondaryHeading style={{textAlign:"center"}} text={"The All-in-One Tool to manage your Portfolio"}/>
+                                    <SecondaryHeading style={{textAlign:"center"}} text={"The All-in-One Tool to manage your Portfolio :O"}/>
                                 </div>
 
                             </div>
 
-                            <Features fheading_1={"Portfolio Performance Test"} fheading_2={"Diversification"}
+                            <Features fheading_1={"Portfolio Performance"} fheading_2={"Diversification"}
                                       fheading_3={"Portfolio Measures"}
                                       fsubheading_1={"Track the performance of all your holdings in one place"}
                                       fsubheading_2={"How well is your portfolio diversified among different dimensions"}
