@@ -15,17 +15,12 @@ interface AppProps {
 
 }
 
-
-
 class Footer extends Component<AppProps, AppState> {
     constructor(props:AppProps) {
         super(props);
         this.state = {
         };
     };
-
-
-
     render() {
         return (
             <div id={"footer-section"} style={{paddingTop:"0", marginTop:"4rem"}} className={"normal_div footer-sec"}>
@@ -48,10 +43,7 @@ class Footer extends Component<AppProps, AppState> {
                                     <a style={{width:"100%", height:"100%", display:"flex", alignItems:"center", justifyContent:"center"}} className={"link-text"} href="/impressum">Imprint</a>
                                 </div>
                             </div>
-
-
                         </div>
-
                     </div>
                     <div className={"footer-item"}>
                         <div className={"footer-page-overview"}>
@@ -65,10 +57,6 @@ class Footer extends Component<AppProps, AppState> {
                                 <a className={"footer-ref-link"} href="/#testimonial-section">Testimonials</a></div>
                             <div className={"page-overview-item"}>
                                 <a className={"footer-ref-link"} href="/#faq-section">FAQ</a></div>
-
-
-
-
                         </div>
                     </div>
                     <div className={"footer-item"}>
@@ -88,8 +76,6 @@ class Footer extends Component<AppProps, AppState> {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         );
     }

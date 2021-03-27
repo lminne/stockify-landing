@@ -38,20 +38,18 @@ class ContactPage extends Component<AppProps, AppState> {
 
 
         return (
-            <div style={{width:"100%"}}>
-                <div className={"normal_div"}>
+            <div id={"app"}>
+
                     <Header/>
-                </div>
+                    <div className={"navbar-margin"}>
 
-
-
-                <div id={"contactPage"}>
-                    <div className={"contact-page-holder navbar-margin"}>
-                        <Contact/>
-                        <ContactForm/>
-                        <Footer/>
+                            <div className={"contact-page-holder"}>
+                                <Contact/>
+                                <ContactForm/>
+                                <Footer/>
+                            </div>
                     </div>
-                </div>
+
             </div>
 
         )
