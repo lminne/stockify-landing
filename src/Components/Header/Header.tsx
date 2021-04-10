@@ -14,7 +14,7 @@ interface AppState {
 }
 
 interface AppProps {
-    general?: IGeneral
+    general?: IGeneral,
 }
 
 @inject('general')
@@ -23,7 +23,6 @@ class Header extends Component<AppProps, AppState> {
 
     constructor(props: AppProps) {
         super(props);
-
         this.state = {
             clicked: false,
             width: window.innerWidth,
@@ -72,6 +71,13 @@ class Header extends Component<AppProps, AppState> {
 
 
     };
+
+    focusMailInput = () => {
+        let mailinput = document.getElementById("mailinput");
+        if (mailinput) {
+            mailinput.focus()
+            mailinput.click()
+        }}
 
     scrollHandler = () => {
         const header = document.getElementById("header");
@@ -170,8 +176,7 @@ class Header extends Component<AppProps, AppState> {
                         </Scrollspy>
 
                     <div style={{paddingRight: "1rem"}}>
-                        <Button style={buttonStyle} text={"Get started"} onClickFunction={() => {
-                        }}/>
+                        <Button style={buttonStyle} text={"Get started"} onClickFunction={this.focusMailInput}/>
                     </div>
                 </div>
             </div>

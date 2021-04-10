@@ -28,7 +28,7 @@ class Contact extends Component<AppProps, AppState> {
                     <div className={"get-started-container"}>
                         <ContactItem mail={true} IconComp={<Mail/>} subheadingText={"info@mbyt.de"} headingText={"Mail"}/>
                         <ContactItem mail={false} IconComp={<Call/>} subheadingText={"+49 123 456 789"} headingText={"Phone"}/>
-                        <ContactItem mail={false} IconComp={<Home/>} subheadingText={"Vallendar, Germany"} headingText={"Adress"}/>
+                        <ContactItem mail={false} IconComp={<Home/>} subheadingText={"Vallendar, Germany"} headingText={"Address"}/>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@ class Contact extends Component<AppProps, AppState> {
     }
 
 
-};
+}
 
 export default Contact;
 
