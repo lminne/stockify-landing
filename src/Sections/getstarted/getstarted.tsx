@@ -26,7 +26,10 @@ class GetStarted extends Component<AppProps, AppState> {
                 <div style={{width:"100%"}}>
                     <PrimaryHeading style={{textAlign:"center"}} text={"Get started"}/>
                     <SecondaryHeading style={{textAlign:"center"}} text={"Setting up Stockify"}/>
-                <hr className={"get-started-line"}/>
+                    <div className={"normal_div"}>
+                        <hr className={"get-started-line"}/>
+                    </div>
+
                 <div className={"get-started-container"}>
                     <GetStartedItem headingText={"Download"} subheadingText={"Get Stockify App from your App Store"} IconComp={<DownloadIcon/>}/>
                     <GetStartedItem headingText={"Add Portfolio"} subheadingText={"Add all your holdings to your portfolio"} IconComp={<AddPortfolioIcon/>}/>

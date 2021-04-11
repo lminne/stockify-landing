@@ -138,6 +138,7 @@ class Header extends Component<AppProps, AppState> {
         } else {
             return <div className={"flex-column-center " + classname}>
                 <div id="header">
+
                     <div id="header_left_content" style={{paddingLeft: "1rem"}}>
 
                         <div id="header_title" onClick={() => {

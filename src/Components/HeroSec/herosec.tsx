@@ -6,6 +6,10 @@ import {ReactComponent as ArrowDown} from "../../assets/img/Down-Arrow.svg";
 import PrimaryHeading from "../PrimaryHeading/PrimaryHeading";
 import SecondaryHeading from "../SecondaryHeading/SecondaryHeading";
 import {IGeneral} from "../../stores/generals";
+import TypingHeading from "../TypingHeading/TypingHeading";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+
 
 interface AppState {
     mail: string,
@@ -124,9 +128,9 @@ class HeroSec extends Component<AppProps, AppState> {
             <div id={"hero-section"}>
                 <div className={"section even-sec"}>
                     <div className={"container"}>
-                        <div className={"hero-text"}>
+                        <div className={"hero-text animate__animated animate__fadeInLeft"}>
                             <div className={"heading-holder"}>
-                                <PrimaryHeading text={"Understand your Portfolio"}/>
+                                <TypingHeading texts={'["Understand your Portfolio", "Identify Risk", "Balance your Portfolio"]'}/>
                                 <SecondaryHeading text={"Why ETF Portfolios are not necessarily diversified"}/>
                                 <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} onSubmit= {this.formSubmit.bind(this)} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} className={"button-group-desktop"} noValidate={true}>
                                     <div>
@@ -156,11 +160,13 @@ class HeroSec extends Component<AppProps, AppState> {
                                 </form>
                             </div>
                         </div>
-                        <div className={"hero-item"}>
-                            <img src={HeroImg} className={"hero-img"}/>
 
-                        </div>
-                        <div className={"cta-container"}>
+                            <div className={"hero-item animate__animated animate__fadeInRight"}>
+                                <img src={HeroImg} className={"hero-img"}/>
+
+                            </div>
+
+                        <div className={"cta-container animate__animated animate__fadeInUp"}>
                             <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} onSubmit = {this.formSubmit.bind(this)} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} noValidate={true}>
                                 <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                     <div className={"mailform"}>
@@ -185,22 +191,17 @@ class HeroSec extends Component<AppProps, AppState> {
                                     </div>
                                 </div>
                             </form>
-
-
                         </div>
-
-
-
                     </div>
 
                 </div>
+
                 <div className={"section"}>
                     <div className={"normal_div"} style={{paddingTop: "0.5rem", paddingBottom:"1rem"}}>
 
                         <a href="#get-started-section"><ArrowDown/></a>
                     </div>
                 </div>
-
             </div>
 
 

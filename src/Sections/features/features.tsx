@@ -4,6 +4,7 @@ import Featureitem from "../../Components/featureitem/featureitem";
 import PerfHero from "../../assets/img/PerformanceMockuplarge.webp"
 import CountryHero from "../../assets/img/CountryMockuplarge.webp"
 
+
 interface AppState {
 
 }
@@ -52,23 +53,23 @@ class Features extends Component<AppProps, AppState> {
             pic_first = true
         }
         return (
-            <div className={"featureSingle"}>
+                <div className={"featureSingle"}>
 
-                <div className={"featureContainer"}>
-                    {pic_first?<div style={{width:"100%"}} className={"perf-hero-col"}>
-                        {this.props.first_img? <img className={"perfHero"} src={PerfHero} alt="PerfHero"/> :<img className={"perfHero"} src={CountryHero} alt="CountryHero"/>}
-                    </div>: <div className={"perf-hero-col-last"}>
-                        {this.props.first_img? <img className={"perfHero"} src={PerfHero} alt="PerfHero"/> :<img className={"perfHero"} src={CountryHero} alt="CountryHero"/>}
-                    </div>}
-                    <div className={"featured-descriptions"}>
-                        <Featureitem FeatureHeading={this.props.fheading_1} FeatureSubheading={this.props.fsubheading_1}/>
-                        <Featureitem FeatureHeading={this.props.fheading_2} FeatureSubheading={this.props.fsubheading_2}/>
-                        <Featureitem FeatureHeading={this.props.fheading_3} FeatureSubheading={this.props.fsubheading_3}/>
+                    <div className={"featureContainer"}>
+                        {pic_first?<div style={{width:"100%"}} className={"perf-hero-col"}>
+                            {this.props.first_img? <img className={"perfHero"} src={PerfHero} alt="PerfHero"/> :<img className={"perfHero"} src={CountryHero} alt="CountryHero"/>}
+                        </div>: <div className={"perf-hero-col-last"}>
+                            {this.props.first_img? <img className={"perfHero"} src={PerfHero} alt="PerfHero"/> :<img className={"perfHero"} src={CountryHero} alt="CountryHero"/>}
+                        </div>}
+                        <div className={"featured-descriptions"}>
+                            <Featureitem FeatureHeading={this.props.fheading_1} FeatureSubheading={this.props.fsubheading_1}/>
+                            <Featureitem FeatureHeading={this.props.fheading_2} FeatureSubheading={this.props.fsubheading_2}/>
+                            <Featureitem FeatureHeading={this.props.fheading_3} FeatureSubheading={this.props.fsubheading_3}/>
+                        </div>
+
                     </div>
 
                 </div>
-
-            </div>
         );
     }
 
