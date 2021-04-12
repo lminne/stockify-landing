@@ -74,12 +74,15 @@ collectData = (TxtType:any) => {
     render() {
 
         return (
-            <h3 style={this.props.style} className={"h1-primary typing-heading"}>
-                <a className={"typewrite"} data-period={"2000"}
-                   datatype={this.props.texts}>
-                    <span className="wrap"/>
-                </a>
-            </h3>
+            <div className={"typing-heading-container"}>
+                <h3 style={this.props.style} className={"h1-primary"}>
+                    <a className={"typewrite"} data-period={"2000"}
+                       datatype={this.props.texts}>
+                        <span className="wrap"/>
+                    </a>
+                </h3>
+            </div>
+
 
         );
     }

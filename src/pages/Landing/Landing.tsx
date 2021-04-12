@@ -50,7 +50,7 @@ class Landing extends Component<AppProps, AppState> {
                 <Cookie/>
                 <div className={"navbar-margin"}>
                     <HeroSec/>
-                        <div id={"features-section"} className={"section odd-sec"}>
+                    <div id={"features-section"} className={"section odd-sec"}>
                             <div>
                                 <div>
                                     <div>

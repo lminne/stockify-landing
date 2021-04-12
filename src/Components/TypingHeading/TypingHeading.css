@@ -8,6 +8,21 @@
     letter-spacing: .05em; /* Adjust as needed */
 }
 
+.typing-heading-container {
+    min-height: 15em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+    .typing-heading-container {
+        justify-content: center;
+        min-height: 0;
+    }
+
+}
+
 .typewriter {
     display: flex;
     justify-content: center;

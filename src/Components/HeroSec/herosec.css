@@ -16,6 +16,13 @@
     justify-content: center;
 }
 
+#hero-section {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mailinput {
     width: 100%;
     border-radius: 50px;
@@ -110,8 +117,10 @@
     .mailinput {
         height: 40px;
     }
+    #hero-section {
+        height: 100%;
+    }
 }
-
 
 @media only screen and (max-width: 992px) {
     .hero-text {
@@ -145,8 +154,8 @@
         grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
     .hero-img {
-        max-width: 100%;
-        min-width: 300px;
+        max-width: 50%;
+        min-width: 280px;
     }
     .cta-container {
         width: auto;
@@ -160,7 +169,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 2rem;
+        padding-top: 0.5rem;
     }
     .btn-holder-mobile {
         padding-right: 0.5rem;
@@ -175,8 +184,8 @@
 
 @media only screen and (max-width: 650px) {
     .mailform {
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .mailinput {
         width: 260px;
@@ -239,8 +248,8 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
     .hero-img {
-        max-width: 100%;
-        min-width: 290px;
+        max-width: 90%;
+        min-width: 270px;
     }
 
     .hero-text {
@@ -271,8 +280,8 @@
     color: lightcoral;
     width: 100%;
     text-align: center;
-    padding-bottom: 2rem;
     font-size: 1.3rem;
+    height: auto;
 }
 
 .invalidMail {
