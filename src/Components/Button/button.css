@@ -27,11 +27,17 @@
 @media only screen and (max-width: 992px) {
     .get-started {
         height:55px;
+        width: 275px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .get-started {
+        height:40px;
         width: 260px;
         font-size: 25px;
     }
 }
-
 
 
 

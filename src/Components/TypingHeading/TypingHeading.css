@@ -18,7 +18,7 @@
 @media only screen and (max-width: 992px) {
     .typing-heading-container {
         justify-content: center;
-        min-height: 0;
+        min-height: 8em;
     }
 
 }

@@ -91,9 +91,12 @@ class HeroSec extends Component<AppProps, AppState> {
                     errorMessage = "Email is not valid.";
                 }
             }
-            if (errorMessage!= "") {
+            if (!formIsValid) {
                 mailinput.style.border = "4px lightcoral solid";
 
+            }
+            else {
+                mailinput.style.border = "none";
             }
             this.setState({
                 error: errorMessage
@@ -128,7 +131,7 @@ class HeroSec extends Component<AppProps, AppState> {
         return (
             <div id={"hero-section"}>
                 <div>
-                    <div className={"section even-sec"}>
+                    <div className={"section even-sec"} style={{paddingTop:0}}>
                         <div>
                             <div className={"container"}>
                                 <div className={"hero-text animate__animated animate__fadeInLeft"}>
@@ -173,7 +176,7 @@ class HeroSec extends Component<AppProps, AppState> {
                                     <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} onSubmit = {this.formSubmit.bind(this)} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} noValidate={true}>
                                         <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                             <div className={"mailform"}>
-                                                <input name={"EMAIL"} className={"mailinput"} aria-label={"betamailinput"} placeholder={"Your Mail"} id={"mailinputMobile"} type="email" required={true}/>
+                                                <input name={"EMAIL"} className={"mailinput"} aria-label={"betamailinput"} placeholder={"Your Mail"} id={"mailinputMobile"} type="email" value={this.state.mail} onChange={this.handleChange.bind(this)} onInvalid={this.handleValidation} required={true}/>
                                             </div>
                                         </div>
                                         <div className={"error"}>
@@ -184,13 +187,7 @@ class HeroSec extends Component<AppProps, AppState> {
                                                 <div className={"btn-holder-mobile"}>
                                                     <button type={"submit"} className={"get-started"}>Get Beta Access</button>
                                                 </div>
-                                                <div className={"btn-holder-mobile"}>
-                                                    <div className={"get-started"} style={{display:"flex", justifyContent:"center", alignItems:"center",backgroundColor:"#f9f9f9", borderRadius:"50px", border:"1px solid #34CD9E"}}>
-                                                        <a style={{textDecoration:"none", color:"#34CD9E"}} href="/#features-section">Learn more</a>
 
-                                                    </div>
-
-                                                </div>
                                             </div>
                                         </div>
                                     </form>
