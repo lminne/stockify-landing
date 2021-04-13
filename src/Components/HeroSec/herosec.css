@@ -152,6 +152,10 @@
         max-width: 100%;
     }
 
+    .h3-secondary {
+        text-align: center;
+    }
+
     .container {
         width: 100%;
         display: grid;

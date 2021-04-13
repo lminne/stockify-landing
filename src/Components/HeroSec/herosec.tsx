@@ -86,7 +86,7 @@ class HeroSec extends Component<AppProps, AppState> {
                 let lastAtPos = mail.lastIndexOf('@');
                 let lastDotPos = mail.lastIndexOf('.');
 
-                if (!(lastAtPos < lastDotPos && lastAtPos > 0 && mail.indexOf('@@') == -1 && lastDotPos > 2 && (mail.length - lastDotPos) > 2)) {
+                if (!(lastAtPos < lastDotPos && lastAtPos > 0 && mail.indexOf('@@') === -1 && lastDotPos > 2 && (mail.length - lastDotPos) > 2)) {
                     formIsValid = false;
                     errorMessage = "Email is not valid.";
                 }
