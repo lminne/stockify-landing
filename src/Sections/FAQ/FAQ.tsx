@@ -41,7 +41,7 @@ class FAQ extends Component<AppProps, AppState> {
 
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
-                                            Get your beta access <a className={"link-text"} href="/#hero-section">here</a>
+                                            Get your beta access <a className={"link-text"} href="https://testflight.apple.com/join/58vkeNU9">here</a>
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
@@ -87,7 +87,7 @@ class FAQ extends Component<AppProps, AppState> {
 
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
-                                            Unfortunately, we do not support that yet, however, we are working really hard to provide it.
+                                            Yes, we do also support over 40k single stocks!
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
