@@ -9,6 +9,7 @@ import {IGeneral} from "../../stores/generals";
 import TypingHeading from "../TypingHeading/TypingHeading";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
+import {ReactComponent as AppleDownload} from "../../assets/img/AppleDownload.svg";
 
 
 interface AppState {
@@ -138,32 +139,21 @@ class HeroSec extends Component<AppProps, AppState> {
                                     <div className={"heading-holder"}>
                                         <TypingHeading texts={'["Understand your Portfolio", "Identify Risk", "Balance your Portfolio"]'}/>
                                         <SecondaryHeading text={"Why ETF Portfolios are not necessarily diversified"}/>
-                                        <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} onSubmit= {this.formSubmit.bind(this)} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} className={"button-group-desktop"} noValidate={true}>
-                                            <div>
-                                                <div>
-                                                    <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
-                                                        <div className={"mailform"}>
-                                                            <input name={"EMAIL"} className={"mailinput"} aria-label={"betamailinput"} placeholder={"Your Mail"} id={"mailinput"} type="email" value={this.state.mail} onChange={this.handleChange.bind(this)} onInvalid={this.handleValidation} required={true}/>
-                                                        </div>
 
-                                                    </div>
-                                                    <div className={"error"}>
-                                                        {this.state.error}
-                                                    </div>
-                                                </div>
 
-                                                <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
+
+                                                <div className={"appleDownloadDesktop"} style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
                                                     <div className={"btn-holder-desktop"}>
-                                                        <button id={"btnmailsubmit"} type={"submit"} className={"get-started"}>Get Beta Access</button>
+                                                        <a href="https://testflight.apple.com/join/58vkeNU9">
+                                                            <AppleDownload style={{width:"12rem",height:"4rem"}}/>
+                                                        </a>
                                                     </div>
                                                     <div className={"btn-holder-desktop"} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-                                                        <div className={"get-started"} style={{display:"flex", justifyContent:"center", alignItems:"center",backgroundColor:"#f9f9f9", borderRadius:"50px", border:"1px solid #34CD9E"}}>
-                                                            <a style={{textDecoration:"none", color:"#34CD9E", width:"100%",height:"100%", display:"flex",justifyContent:"center",alignItems:"center"}} href="/#features-section">Learn more</a>
-                                                        </div>
+
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </form>
+
+
                                     </div>
                                 </div>
 
@@ -173,24 +163,17 @@ class HeroSec extends Component<AppProps, AppState> {
                                 </div>
 
                                 <div className={"cta-container animate__animated animate__fadeInUp"}>
-                                    <form autoComplete={"off"} name={"mc-embedded-subscribe-form"} onSubmit = {this.formSubmit.bind(this)} action={"https://gmail.us1.list-manage.com/subscribe/post?u=2f90230766ba0453532af808b&amp;id=a52339cb71"} method={"post"} noValidate={true}>
-                                        <div style={{width:"100%", display:"flex", justifyContent:"start", alignItems:"center"}}>
-                                            <div className={"mailform"}>
-                                                <input name={"EMAIL"} className={"mailinput"} aria-label={"betamailinput"} placeholder={"Your Mail"} id={"mailinputMobile"} type="email" value={this.state.mail} onChange={this.handleChange.bind(this)} onInvalid={this.handleValidation} required={true}/>
-                                            </div>
-                                        </div>
-                                        <div className={"error"}>
-                                            {this.state.error}
-                                        </div>
-                                        <div>
+
+                                        <div className={"appleDownloadMobile"}>
                                             <div className={"button-group-mobile"}>
                                                 <div className={"btn-holder-mobile"}>
-                                                    <button type={"submit"} className={"get-started"}>Get Beta Access</button>
+                                                    <a href="https://testflight.apple.com/join/58vkeNU9">
+                                                        <AppleDownload style={{width:"10rem",height:"4rem"}}/>
+                                                    </a>
                                                 </div>
 
                                             </div>
                                         </div>
-                                    </form>
                                 </div>
 
                             </div>

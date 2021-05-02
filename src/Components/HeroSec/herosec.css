@@ -143,6 +143,10 @@
         display: none;
     }
 
+    .appleDownloadDesktop {
+        display: none!important;
+    }
+
     .section {
         display: flex;
         justify-content: center;

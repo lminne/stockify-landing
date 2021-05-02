@@ -126,7 +126,7 @@ class Header extends Component<AppProps, AppState> {
                     <div className="header_menu">
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#hero-section"><Heading text={"Home"} style={{marginTop: "100px"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#features-section"><Heading text={"Features"} style={{marginTop: "0"}}/></a>
-                        <a onClick={() => {this.onclick()}} className={"link-text"} href="/#get-started-section"><Heading text={"Get started"} style={{marginTop: "0"}}/></a>
+                        <a onClick={() => {this.onclick()}} className={"link-text"} href="https://testflight.apple.com/join/58vkeNU9"><Heading text={"Get started"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#testimonial-section" ><Heading text={"Testimonials"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/#faq-section"><Heading text={"FAQ"} style={{marginTop: "0"}}/></a>
                         <a onClick={() => {this.onclick()}} className={"link-text"} href="/contact"><Heading text={"Contact"} style={{marginTop: 0}}/></a>
@@ -157,7 +157,7 @@ class Header extends Component<AppProps, AppState> {
                             }}>Features
                             </div>
                             <div className={"header_right_content_link"} onClick={() => {
-                                window.location.href = "/#get-started-section"
+                                window.location.href = "https://testflight.apple.com/join/58vkeNU9"
                             }}>Get started
                             </div>
                             <div className={"header_right_content_link"} onClick={() => {
