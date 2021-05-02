@@ -177,7 +177,7 @@ class Header extends Component<AppProps, AppState> {
                         </Scrollspy>
 
                     <div style={{paddingRight: "1rem"}}>
-                        <Button style={buttonStyle} text={"Get started"} onClickFunction={window.location.href="https://testflight.apple.com/join/58vkeNU9"}/>
+                        <Button style={buttonStyle} text={"Get started"} onClickFunction={() => {window.location.href="https://testflight.apple.com/join/58vkeNU9"}}/>
                     </div>
                 </div>
             </div>
