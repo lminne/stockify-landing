@@ -57,7 +57,7 @@ class FAQ extends Component<AppProps, AppState> {
                                     <AccordionItemPanel>
                                         <p className={"answer-para"}>
                                             Data Privacy is extremely important to us! Without your consens no personal data is collected or even shared with third parties. Additionally, all data which is consensually collected is stored anonymised. Read more in our <a className={"link-text"}
-                                            href="/impressum">Privacy Policy</a>.
+                                            href="/privacy">Privacy Policy</a>.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
